@@ -4,10 +4,10 @@
 // Background Image
 // ==========================================================================
 
-@mixin backgroundImage($imageURL, $side: right, $space: $spacing-base) {
+@mixin backgroundImage($imageURL, $lr-side: left, $tb-side: center) {
     background-image: url('../images/' + $imageURL);
     background-repeat: no-repeat;
-    background-position: $side $space center;
+    background-position: $lr-side $tb-side ;
 }
 
 // ==========================================================================

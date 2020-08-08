@@ -9,194 +9,303 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/digitalkate.png">
     <script src="../scripts/jquery-3.5.1.min.js"></script>
-    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/scripts-gallery.js"></script>
+    <script src="../scripts/scripts-project.js"></script>
 </head>
-<body class="fixed column sub">
+<body class="fixed column project des">
 
 <div class="heading">
-    <h1><a href="../index.html">Home</a></h1>
-    <h2 class="selected"><a href="../nc-des/index.html">NC DES</a></h2>
-    <h2><a href="../digitalkate/index.html">DigitalKate</a></h2>
-    <h2><a href="https://www.linkedin.com/in/katerosier/" target="_blank">LinkedIn</a></h2>
+    <h1 class="navItem"><a href="../index.html">Home</a></h1>
+    <a class="icon"
+       href="https://www.linkedin.com/in/katerosier/"
+       target="_blank">
+        <img alt="linkedIn icon" src="../images/linkedIn.png">
+    </a>
 </div>
 
 <h2>NC DES</h2>
 
-<div id="navigation"
-     class="row navigation">
-    <div id="nav_step1"
-         class="step">
-        <h3>1</h3>
+<div id="subNavigation"
+     class="row navigation stepNavigation">
+    <div id="subNav_step1"
+         class="navItem">
         <h3>Analysis</h3>
         <div class="arrow"></div>
     </div>
-    <div id="nav_step2"
-         class="step">
-        <h3>2</h3>
+    <div id="subNav_step2"
+         class="navItem">
         <h3>Wireframes</h3>
+        <div class="arrow"></div>
+    </div>
+    <div id="subNav_step3"
+         class="navItem">
+        <h3>Prototype</h3>
         <div class="arrow"></div>
     </div>
 </div>
 
-<div id="contentContainer"
-     class="row contentContainer">
-
-    <!-- Analysis -->
-    <div id="content_step1"
-         class="contentGroup withGallery">
-        <div class="fixed content">
-            <h3>Analysis</h3>
-            <h4>AKA "What is so annoying about this site?"</h4>
+<div id="content_1"
+     class="contentBlock">
+    <h3>Analysis</h3>
+    <div class="row">
+        <div class="content">
+            <p class="note">This is not a live project. This is a redesign attempt for this portfolio only.</p>
             <p>Current live site: <a href="https://fed.des.nc.gov/ofis/citizen/pages/public/Login.aspx" target="new">North Carolina's Division of Employment Security</a></p>
-            <p class="note">Some of the information is missing from the gallery screen shots as I had to blank out a lot of personal information.</p>
-            <p>I'm not sure which annoys me more: that it takes me about 6 clicks to get to anything of relevance once I start at "Sign In" or that I have no idea what's relevant to me once I get there. Or maybe it's the big banner at the top saying not to use the Back button in the browser (really?.. REALLY?). And if this site passes WCAG visibility standards, I'll eat burnt brownies.</p>
-            <p>So there's a list of grievances here. It's long. A good afternoon's and a few cups of tea worth.</p>
-            <p>Now that's out, I know what's wrong. How do I make it right?</p>
-            <p>Well, what does this site need to do? It needs to allow quick filing of an initial claim, a weekly certification, then a visual representation of claim status. There's my core. If anything on the site doesn't revolve around this, it should.</p>
-            <p>Usually this would also be a good time for focus groups. What do others like about the site? What do they not? What are they after when they come here? It's all about getting more points of feedback then just myself. Skipping this in favor of trying to get something up on the portfolio site, but when I get more time for a round 2, something I'd like to come back to.</p>
+            <p>Looking at what is wrong with this site, there’s a few glaring issues:
+                <ul>
+                    <li>It takes about 6 clicks to get to anything of relevance from “Sign In”.</li>
+                    <li>There is no sense of direction once the user is logged in.</li>
+                    <li>There are additional screens that are providing little to no initial value after sign in.</li>
+                    <li>The big banner at the top saying not to use the Back button in the browser.</li>
+                    <li>I’m pretty sure the colors are failing WCAG standards.</li>
+                </ul>
+            </p>
+            <p>Now that’s out, I know what’s wrong. How do I make it right?</p>
+            <p>Well, what does this site need to do? It needs to allow quick filing of an initial claim, a weekly certification, then a visual representation of claim status. There’s my core. If anything on the site doesn’t revolve around this, it should.</p>
+            <p>Usually this would also be a good time for focus groups. What do others like about the site? What do they not? What are they after when they come here? It’s all about getting more points of feedback then just myself. Skipping this in favor of trying to get something up on the portfolio site, but when I get more time for a round 2, something I’d like to come back to.</p>
             <p>I can get an acceptable temporary alternative to this by browsing social media, particular the Raleigh and North Carolina subreddits of reddit.com. People have been using the postings to get questions answered along with other advice and help.</p>
         </div>
-
-        <div id="gallery_step1"
-             class="fixed column gallery">
-            <div class="fixed mainImageArea">
-                <img class="mainImage"
-                     alt=""
-                     title=""
-                     src="">
-                <div class="fixed caption"></div>
+        <div class="teaser">
+            <div class="thumbnails">
+                <img src="analysis/Screen - Sign In - Success.png"
+                     alt="Screen - Sign In - Success"
+                     title="Screen - Sign In - Success">
+                <img src="analysis/Screen - Claimant Homepage.png"
+                     alt="Screen - Claimant Homepage"
+                     title="Screen - Claimant Homepage">
             </div>
-
-            <div class="fixed thumbnails">
-                <img class="thumbnail"
-                     alt="Sign In"
-                     title="Sign In"
-                     src="analysis/Screen - Sign In.png">
-                <img class="thumbnail"
-                     alt="Sign In - Success"
-                     title="Sign In - Success"
-                     src="analysis/Screen - Sign In - Success.png">
-                <img class="thumbnail"
-                     alt="Claimant Homepage"
-                     title="Claimant Homepage"
-                     src="analysis/Screen - Claimant Homepage.png">
-                <img class="thumbnail"
-                     alt="Claim History"
-                     title="Claim History"
-                     src="analysis/Screen - Claim History.png">
-                <img class="thumbnail"
-                     alt="Confirmation History"
-                     title="Confirmation History"
-                     src="analysis/Screen - Confirmation History.png">
-                <img class="thumbnail"
-                     alt="Determination History"
-                     title="Determination History"
-                     src="analysis/Screen - Determination History.png">
-                <img class="thumbnail"
-                     alt="File Claim"
-                     title="File Claim"
-                     src="analysis/Screen - File Claim.png">
-                <img class="thumbnail"
-                     alt="My Documents"
-                     title="My Documents"
-                     src="analysis/Screen - My Documents.png">
-                <img class="thumbnail"
-                     alt="Change Personal Info"
-                     title="Change Personal Info"
-                     src="analysis/Screen - Change Personal Info.png">
-            </div>
-
-            <div class="toggle openGallery">View Gallery Images</div>
-            <div class="toggle closeGallery">Close Gallery</div>
-        </div>
-
-        <div class="stepNavigation">
-            <div class="button prev"
-                 data-step="home">Home</div>
-            <div class="button next"
-                 data-step="step2"><span class="number">Step 2:&nbsp;</span>Wireframes</div>
+            <div id="open_1"
+                 class="button">Open Gallery</div>
         </div>
     </div>
+    <div class="historyNavigation">
+        <div class="button prev"
+             data-step="home">Home</div>
+        <div class="button next"
+             data-step="step2">Wireframes</div>
+    </div>
+    <div class="gallery">
+        <div class="fixed shadow"></div>
+        <div class="fixed heading">
+            <h3>Analysis</h3>
+            <div id="close_1"
+                 class="button">
+                <img src="../images/close.png"
+                     alt="close gallery"
+                     title="close gallery">
+            </div>
+        </div>
+        <div id="gallery_1"
+             class="fixed galleryBox">
+            <div class="mainImage">
+                <img src=""
+                     alt=""
+                     title="">
+                <div class="caption">
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <img src="analysis/Screen - Sign In.png"
+                     alt="Sign In screen"
+                     title="Sign In screen"
+                     data-caption="Sign In screen">
+                <img src="analysis/Screen - Sign In - Success.png"
+                     alt="Sign In - Success screen"
+                     title="Sign In - Success screen"
+                     data-caption="Sign In - Success screen">
+                <img src="analysis/Screen - Change Personal Info.png"
+                     alt="Change Personal Info screen"
+                     title="Change Personal Info screen"
+                     data-caption="Change Personal Info screen">
+                <img src="analysis/Screen - Claim History.png"
+                     alt="Claim History screen"
+                     title="Claim History screen"
+                     data-caption="Claim History screen">
+                <img src="analysis/Screen - Claimant Homepage.png"
+                     alt="Claimant Homepage screen"
+                     title="Claimant Homepage screen"
+                     data-caption="Claimant Homepage screen">
+                <img src="analysis/Screen - Confirmation History.png"
+                     alt="Confirmation History screen"
+                     title="Confirmation History screen"
+                     data-caption="Confirmation History screen">
+                <img src="analysis/Screen - Determination History.png"
+                     alt="Determination History screen"
+                     title="Determination History screen"
+                     data-caption="Determination History screen">
+                <img src="analysis/Screen - File Claim.png"
+                     alt="File Claim screen"
+                     title="File Claim screen"
+                     data-caption="File Claim screen">
+                <img src="analysis/Screen - My Documents.png"
+                     alt="My Documents screen"
+                     title="My Documents screen"
+                     data-caption="My Documents screen">
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Wireframes -->
-    <div id="content_step2"
-        class="contentGroup withGallery">
-        <div class="fixed content">
-            <h3>Wireframes</h3>
-            <h4>AKA "This was a 100 piece puzzle. Why do I have 101 in the box?"</h4>
-            <p class="note">Please note this is a sample in progress for my portfolio, so the wireframe samples you see here are incomplete. It should still give you an idea of what something in progress looks like for me.</p>
-            <!-- <p class="note">Please note uou may notice some content holes between the site I'm working against and the designs. This is intentional for now. I've been trying to keep to the lowest common functionality to get something up on the portfolio (the <i>minimum viable product</i> if you will). Later on if I have time, I'd like to finish it out.</p> -->
+<div id="content_2"
+     class="contentBlock">
+    <h3>Wireframes</h3>
+    <div class="row">
+        <div class="content">
+            <p class="note">A note for all those who are reviewing this. You may notice some content holes between the site I’m working against and the designs. This is intentional for now. I’ve been trying to keep to the lowest common functionality to get something up on the portfolio (the minimum viable product if you will). Later on if I have time, I’d like to finish it out.</p>
             <p>Once the core has been figured out, the next stage is to get users in and out. Make it fast, make it easy, and get them on their way. They have better things to do.</p>
             <p>Citizens need to be able to see exactly where they are in the process and what they need to do next. After signing in is a great place to show progress and items of attention. Why make them dig?</p>
-            <p>They also need to know where they are and where they're looking at, so a sense of location and structure in the navigation is important.</p>
-            <p>Again, another good time for users, but what I'm skipping in favor of trying to get something up on the portfolio site quickly. This time it'd be more around tasking and one on one. Given a couple of core tasks and a couple of side quests, how easily are users able to complete them? Take the feedback, revise, do it again. The repetition of this is typically boxed in by commitment on deliverables, and doing short quick bursts over single screens and single path flows is typically better than the whole site at once.</p>
-            <div class="card file">
-                <div class="thumbnail zip"></div>
-                <a href="nc-des-wireframes.zip">ZIP of all Wireframes (in PNG format)</a>
-            </div>
+            <p>They also need to know where they are and where they’re looking at, so a sense of location and structure in the navigation is important.</p>
+            <p>Again, another good time for users, but what I’m skipping in favor of trying to get something up on the portfolio site quickly. This time it’d be more around tasking and one on one. Given a couple of core tasks and a couple of side quests, how easily are users able to complete them? Take the feedback, revise, do it again. The repetition of this is typically boxed in by commitment on deliverables, and doing short quick bursts over single screens and single path flows is typically better than the whole site at once.</p>
         </div>
-
-        <div id="gallery_step2"
-             class="fixed column gallery">
-            <div class="fixed mainImageArea">
-                <img class="mainImage"
-                     alt=""
-                     title=""
-                     src="">
-                <div class="fixed caption"></div>
+        <div class="teaser">
+            <div class="thumbnails">
+                <img src="wireframes/claims.png"
+                     alt="Claims screen with weekly and initial filings"
+                     title="Claims screen">
+                <img src="wireframes/weekly_certification__file_.png"
+                     alt="File weekly certification"
+                     title="File weekly certification">
             </div>
-
-            <div class="fixed thumbnails">
-                <img class="thumbnail"
-                     alt="Sign In Screen"
-                     title="Sign In Screen"
-                     src="wireframes/sign_in.png">
-                <img class="thumbnail"
-                     alt="Sign Out Screen"
-                     title="Sign Out Screen"
-                     src="wireframes/sign_out.png">
-                <img class="thumbnail"
-                     alt="Home Screen - Default variation"
-                     title="Home Screen - Default variation"
-                     src="wireframes/home_default.png">
-                <img class="thumbnail"
-                     alt="Home Screen - After Initial Claim variation"
-                     title="Home Screen - After Initial Claim variation"
-                     src="wireframes/home_initial_claim_filed.png">
-                <img class="thumbnail"
-                     alt="Home Screen - After Weekly Certification Filed variation"
-                     title="Home Screen - After Weekly Certification Filed variation"
-                     src="wireframes/home_weekly_filed.png">
-                <img class="thumbnail"
-                     alt="Filing Initial Claim - Step 1"
-                     title="initial_claim_step_1"
-                     src="wireframes/initial_claim_step_1.png">
-                <img class="thumbnail"
-                     alt="Filing Weekly Certification"
-                     title="Filing Weekly Certification"
-                     src="wireframes/weekly_certification.png">
-                <img class="thumbnail"
-                     alt="Profile Screen"
-                     title="Profile Screen"
-                     src="wireframes/profile.png">
-                <img class="thumbnail"
-                     alt="Wages Screen"
-                     title="Wages Screen"
-                     src="wireframes/wages.png">
-            </div>
-
-            <div class="toggle openGallery">View Gallery Images</div>
-            <div class="toggle closeGallery">Close Gallery</div>
-        </div>
-
-        <div class="stepNavigation">
-            <div class="button prev"
-                 data-step="step1"><span class="number">Step 1:&nbsp;</span>Analysis</div>
-            <div class="button next"
-                 data-step="step3"><span class="number">Step 3:&nbsp;</span>Mockups</div>
+            <div id="open_2"
+                 class="button">Open Gallery</div>
         </div>
     </div>
+    <div class="historyNavigation">
+        <div class="button prev"
+             data-step="step1">Analysis</div>
+        <div class="button next"
+             data-step="step2">Prototype</div>
+    </div>
+    <div class="gallery">
+        <div class="fixed shadow"></div>
+        <div class="fixed heading">
+            <h3>Wireframes</h3>
+            <div id="close_2"
+                 class="button">
+                <img src="../images/close.png"
+                     alt="close gallery"
+                     title="close gallery">
+            </div>
+        </div>
+        <div id="gallery_2"
+             class="fixed galleryBox">
+            <div class="mainImage">
+                <img src=""
+                     alt=""
+                     title="">
+                <div class="caption">
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <img src="wireframes/sign_in.png"
+                     alt="Sign In screen"
+                     title="Sign In screen"
+                     data-caption="Sign In screen">
+                <img src="wireframes/sign_up.png"
+                     alt="Sign Up screen"
+                     title="Sign Up screen"
+                     data-caption="Sign In screen">
+                <img src="wireframes/forgot_password.png"
+                     alt="Forgot password screen"
+                     title="Forgot password screen"
+                     data-caption="Forgot password screen">
 
+                <img src="wireframes/claims.png"
+                     alt="Claims screen"
+                     title="Claims screen"
+                     data-caption="Claims screen">
+
+                <img src="wireframes/initial_claim__personal_.png"
+                     alt="Initial Claim - personal screen"
+                     title="Initial Claim - personal screen"
+                     data-caption="Initial Claim - personal screen">
+                <img src="wireframes/initial_claim__contact_.png"
+                     alt="Initial Claim - contact screen"
+                     title="Initial Claim - contact screen"
+                     data-caption="Initial Claim - contact screen">
+                <img src="wireframes/initial_claim__demographics_.png"
+                     alt="Initial Claim - demographics screen"
+                     title="Initial Claim - demographics screen"
+                     data-caption="Initial Claim - demographics screen">
+                <img src="wireframes/initial_claim__eligability_.png"
+                     alt="Initial Claim - eligability screen"
+                     title="Initial Claim - eligability screen"
+                     data-caption="Initial Claim - eligability screen">
+                <img src="wireframes/initial_claim__separation_.png"
+                     alt="Initial Claim - separation screen"
+                     title="Initial Claim - separation screen"
+                     data-caption="Initial Claim - separation screen">
+                <img src="wireframes/initial_claim__work_search_.png"
+                     alt="Initial Claim - work search screen"
+                     title="Initial Claim - work search screen"
+                     data-caption="Initial Claim - work search screen">
+                <img src="wireframes/initial_claim__payment___tax_.png"
+                     alt="Initial Claim - payment screen"
+                     title="Initial Claim - payment screen"
+                     data-caption="Initial Claim - payment screen">
+
+                <img src="wireframes/weekly_certification__file_.png"
+                     alt="File weekly certification"
+                     title="File weekly certification"
+                     data-caption="File a weekly certification. Must be done once per week.">
+
+                <img src="wireframes/weekly_certification__summary_.png"
+                     alt="File weekly certification"
+                     title="File weekly certification"
+                     data-caption="File a weekly certification. Must be done once per week.">
+
+                <img src="wireframes/wages.png"
+                     alt="Wages screen with listed wages"
+                     title="Wages screen"
+                     data-caption="Wages screen with the last four quarter wages">
+
+                <img src="wireframes/profile_-_personal.png"
+                     alt="Profile screen's personal details section with related fields"
+                     title="Profile screen - Personal Details"
+                     data-caption="Profile screen's personal details section with related fields">
+                <img src="wireframes/profile_-_contact.png"
+                     alt="Profile screen's contact section with related fields"
+                     title="Profile screen - Contact Details"
+                     data-caption="Profile screen's contact details section with various contact fields">
+                <img src="wireframes/profile_-_payment.png"
+                     alt="Profile screen's payment section with related fields"
+                     title="Profile screen - Payment Details"
+                     data-caption="Profile screen's payment details section with bank account information">
+                <img src="wireframes/profile_-_locate.png"
+                     alt="Profile screen's assigned office section"
+                     title="Profile screen - Assigned Office"
+                     data-caption="Profile screen's assigned office section. Can locate the closest office to address.">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content_3"
+     class="contentBlock">
+    <h3>Prototype</h3>
+    <div class="row">
+        <div class="content">
+            <p>After the core of the wireframes are complete, it's time to start flushing out the interactions and prototype.</p>
+            <p>The wireframes started in Axure, so the prototype will expand on the wireframe files by adding interactions (e.g. on hover) and click through behaviors.</p>
+            <p>Adding in this functionality also allows for polishing overarching structures.</p>
+
+            <p class="note">You will need the Axure browser plugin for the prototype to work. It's also currently not compatible with smaller screens and/or mobile devices.</p>
+        </div>
+        <div class="teaser">
+            <div class="button fakeButton"
+                 data-url="http://www.digitalkate.net/nc-des/prototype/start.html">
+                Axure RP 8 Prototype
+            </div>
+        </div>
+    </div>
+    <div class="historyNavigation">
+        <div class="button prev"
+             data-step="step2">Wireframe</div>
+        <div class="button next"
+             data-step="home">Home</div>
+    </div>
 </div>
 
 </body>
