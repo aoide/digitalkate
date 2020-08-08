@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Background Image
+// ==========================================================================
+
+@mixin backgroundImage($imageURL, $side: right, $space: $spacing-base) {
+    background-image: url('../images/' + $imageURL);
+    background-repeat: no-repeat;
+    background-position: $side $space center;
+}
+
+// ==========================================================================
+// Fixed
+// ==========================================================================
+
+@mixin fixed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+// ==========================================================================
+// Shadow
+// ==========================================================================
+
+@mixin shadow {
+    -webkit-box-shadow:2px 3px 5px 0 rgba(0, 0, 0, .35);
+    -moz-box-shadow:2px 3px 5px 0 rgba(0, 0, 0, .35);
+    box-shadow:2px 3px 5px 0 rgba(0, 0, 0, .35);
+}

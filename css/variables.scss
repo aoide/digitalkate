@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Screens
+// ==========================================================================
+
+$screen-width-large: 1200px;
+$screen-width-medium: 960px;
+$screen-width-small: 550px;
+
+$screen-width-header: 700px;
+$screen-width-nav: 1050px;
+
+$screen-height-large: 1000px;
+
+
+// ==========================================================================
+// Objects
+// ==========================================================================
+
+// bar
+$size-bar: 50px;
+$size-bar-small: 40px;
+
+// arrow for navigation
+$size-arrow: 20px;
+
+// project image gallery
+$size-gallery-width: 600px;
+$size-gallery-height: 125px;
+
+
+// ==========================================================================
+// Spacing
+// ==========================================================================
+
+$spacing-base: 20px;
+$spacing-half: $spacing-base / 2;
+$spacing-twice: $spacing-base * 2;
+
+$spacing-button: 70px;
+
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// base
+$color-white: #FFF;
+$color-black: #000;
+$color-grey: lighten($color-black, 50%);
+$color-grey-dark: lighten($color-black, 25%);
+$color-grey-light: lighten($color-black, 75%);
+
+// blues (main)
+$color-blue: #2C4870;
+$color-blue-dark: #051A39;
+$color-blue-light: #7489A7;
+
+// purples (secondary)
+$color-purple: #3C3176;
+$color-purple-dark: #10083C;
+$color-purple-light: #847CAF;
+
+// greens (secondary)
+$color-green: #246D5E;
+$color-green-dark: #00372D;
+$color-green-light: #6CA297;
+
+
+// ==========================================================================
+// Colors - Navigation
+// ==========================================================================
+
+$navigation-normal: $color-blue;
+$navigation-hover: $color-green;
+$navigation-selected: $color-blue-dark;
