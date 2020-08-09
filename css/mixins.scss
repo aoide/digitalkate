@@ -7,7 +7,7 @@
 @mixin backgroundImage($imageURL, $lr-side: left, $tb-side: center) {
     background-image: url('../images/' + $imageURL);
     background-repeat: no-repeat;
-    background-position: $lr-side $tb-side ;
+    background-position: $lr-side $tb-side;
 }
 
 // ==========================================================================
