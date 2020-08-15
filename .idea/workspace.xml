@@ -20,10 +20,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
-    <property name="node.js.selected.package.tslint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -33,13 +34,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="701" y="332" key="EditFileWatcherDialog" timestamp="1596919336590">
+    <state x="701" y="332" key="EditFileWatcherDialog" timestamp="1597412751498">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="701" y="332" key="EditFileWatcherDialog/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1596919336590" />
-    <state x="534" y="199" key="SettingsEditor" timestamp="1596919110482">
+    <state x="701" y="332" key="EditFileWatcherDialog/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1597412751498" />
+    <state x="534" y="199" key="SettingsEditor" timestamp="1597412753240">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="534" y="199" key="SettingsEditor/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1596919110482" />
+    <state x="534" y="199" key="SettingsEditor/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1597412753240" />
   </component>
 </project>

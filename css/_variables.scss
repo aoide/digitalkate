@@ -4,23 +4,17 @@
 // Screens
 // ==========================================================================
 
-$screen-width-large: 1300px;
+$screen-width-large: 1200px;
 $screen-width-medium: 960px;
-$screen-width-small: 550px;
-
-$screen-height-large: 1000px;
+$screen-width-small: 700px;
 
 
 // ==========================================================================
 // Objects
 // ==========================================================================
 
-// bar
-$size-bar: 50px;
+$size-bar: 80px;
 $size-bar-small: 40px;
-
-// arrow for navigation
-$size-arrow: 20px;
 
 
 // ==========================================================================
@@ -45,8 +39,8 @@ $color-grey-light: lighten($color-black, 75%);
 
 // blues (main)
 $color-blue: #2C4870;
-$color-blue-dark: #051A39;
-$color-blue-light: #7489A7;
+$color-blue-dark: darken($color-blue, 50%);
+$color-blue-light: lighten($color-blue, 50%);
 
 // purples (secondary)
 $color-purple: #3C3176;
@@ -57,12 +51,3 @@ $color-purple-light: #847CAF;
 $color-green: #246D5E;
 $color-green-dark: #00372D;
 $color-green-light: #6CA297;
-
-
-// ==========================================================================
-// Colors - Navigation
-// ==========================================================================
-
-$navigation-normal: $color-blue;
-$navigation-hover: $color-green;
-$navigation-selected: $color-blue-dark;

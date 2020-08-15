@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Imports
+// ==========================================================================
+
+@import 'flex';
+@import 'variables';
+
+
+// ==========================================================================
+// Home Screen - Main Area
+// ==========================================================================
+
+.mainContent {
+    padding: $spacing-base;
+}
+
+
+// ==========================================================================
+// Home Screen - About
+// ==========================================================================
+
+.about {
+    @include flex(0, 0, auto);
+    width: 40%;
+    padding-right: $spacing-base;
+}
+
+.about p {
+    margin-top: $spacing-base;
+}
+
+// responsive adjustments
+
+@media only screen and (max-width: $screen-width-medium) {
+
+    .about {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: $spacing-base;
+    }
+
+}
+
+
+// ==========================================================================
+// Home Screen - Cards
+// ==========================================================================
+
+$image-size: 250px;
+
+.cardList {
+    @include flexbox;
+}
+
+.card {
+    @include flexbox;
+    @include flex-direction(row);
+    margin-bottom: $spacing-base;
+    position: relative;
+    background: $color-white;
+    border: 1px solid $color-grey-light;
+}
+
+// card images
+
+.card .image {
+    @include fixed;
+    right: auto;
+    overflow: hidden;
+    width: $image-size;
+}
+
+.card img {
+    width: $image-size * 2;
+}
+
+// card content
+
+.card .content {
+    margin-left: $image-size;
+    padding: $spacing-base;
+}
+
+.card h3 {
+    margin-bottom: $spacing-base;
+}
+
+.card .content p:not(:last-child) {
+    margin-bottom: $spacing-base;
+}
+
+.card .readMore {
+    text-align: right;
+}
+
+// responsive adjustments
+
+@media only screen and (max-width: $screen-width-small) {
+
+    .card .content {
+        margin-left: 0;
+    }
+
+    .card .image {
+        display: none;
+    }
+
+}
+
+// ==========================================================================
+// Home Screen - Specific Card Adjustments
+// ==========================================================================
+
+.card.authorpro img {
+    width: $image-size * 1.2;
+}
+
+// ==========================================================================
+// Home Screen - Tag
+// ==========================================================================
+
+.tag {
+    margin-top: auto;
+    padding: $spacing-base;
+    color: $color-grey;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.tag p {
+    line-height: 60px;
+}
+
+.tag .hilight {
+    color: $color-purple-light;
+}

@@ -9,244 +9,105 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/digitalkate.png">
     <script src="../scripts/jquery-3.5.1.min.js"></script>
-    <script src="../scripts/scripts-gallery.js"></script>
     <script src="../scripts/scripts-project.js"></script>
 </head>
-<body class="fixed column project spectrum">
+<body class="fixed column project atp">
 
 <div class="heading">
-    <h1 class="navItem"><a href="../index.html">Home</a></h1>
+    <h1>Kate Rosier</h1>
     <a class="icon"
        href="https://www.linkedin.com/in/katerosier/"
        target="_blank">
         <img alt="linkedIn icon" src="../images/linkedIn.png">
+        <span>LinkedIn</span>
     </a>
 </div>
 
-<h2>Boeing S1000D AuthorPro Check In</h2>
+<h2>Check In for Boeing S1000DauthorPro</h2>
 
 <div id="subNavigation"
-     class="row navigation stepNavigation">
-    <div id="subNav_step0"
-         class="navItem">
-        <h3>Summary</h3>
-        <div class="arrow"></div>
+     class="row subNavigation">
+    <div class="navItem">
+        <h3>Overview</h3>
     </div>
-    <div id="subNav_step1"
-         class="navItem">
+    <div class="navItem">
         <h3>Analysis</h3>
-        <div class="arrow"></div>
     </div>
-    <div id="subNav_step2"
-         class="navItem">
+    <div class="navItem">
+        <h3>User Flow Diagram</h3>
+    </div>
+    <div class="navItem">
         <h3>Mockups</h3>
-        <div class="arrow"></div>
     </div>
 </div>
 
-<div id="content_0"
-     class="contentBlock step0">
-    <h3>Summary</h3>
-    <div class="row">
-        <div class="content">
-            <h4>Overview</h4>
-            <p>With this update, the AuthorPro plugin to Arbortext has a streamlined check in process for documents with less dialogs and the additional option to assign documents after checking them in.</p>
-
-            <h4>Role/Responsibility</h4>
-            <p>UI Designer</p>
-
-            <h4>Users</h4>
-            <p>Authors</p>
-
-            <h4>Scope</h4>
-            <p>Add the ability to assign documents</p>
-
-            <h4>Constraints</h4>
-            <p>The java application itself</p>
-
-            <h4>Results</h4>
-            <p>The end result removed two time consuming activities from our author’s workflow: having to open Manager to assign documents and having to complete multiple clicks to check in a document. It saved time on a daily task and removed existing pain points for them.</p>
+<div class="contentBlock">
+    <h3>Overview</h3>
+    <div class="content">
+        <div class="textBlock">
+            <p><a href="https://www.boeingservices.com/boeing-spectrum/" target="_blank">Boeing S1000DauthorPro</a> is an authoring plug-in for <a href="https://www.ptc.com/en/products/arbortext" target="_blank">Arbortext</a>. The plug-in was written in java and xml and supports checking documents in and out of S1000Dmanager (a document management tool that supports sending documents through workflows as they are authored) as well as assisting authors in complying with the <a href="https://s1000d.org/" target="_blank">S1000D authoring specification</a>.</p>
+            <p>With this update, the check in process was streamlined to remove multiple dialogs and clicks. Additionally, the ability to assign documents to another user in another workflow was added.</p>
         </div>
-        <div class="teaser">
-            <div class="thumbnails">
-                <img src="update/Dialog - Check In.png"
-                     alt="New check in dialog"
-                     title="New check in dialog">
-                <img src="update/Dialog - Check In - Assign.png"
-                     alt="New check in dialog with added assign functionality"
-                     title="New check in dialog with added assign functionality">
-            </div>
-            <div id="open_0"
-                 class="button">Open Gallery</div>
-        </div>
-    </div>
-    <div class="historyNavigation">
-        <div class="button prev"
-             data-step="home">Home</div>
-        <div class="button next"
-             data-step="step1">Analysis</div>
-    </div>
-    <div class="gallery">
-        <div class="fixed shadow"></div>
-        <div class="fixed heading">
-            <h3>Summary</h3>
-            <div id="close_0"
-                 class="button">
-                <img src="../images/close.png"
-                     alt="close gallery"
-                     title="close gallery">
-            </div>
-        </div>
-        <div id="gallery_0"
-             class="fixed galleryBox">
-            <div class="mainImage">
-                <img src=""
-                     alt=""
-                     title="">
-                <div class="caption">
-                    <h4></h4>
-                </div>
-            </div>
-            <div class="thumbnails">
-                <img src="update/Dialog - Check In.png"
-                     alt="New check in dialog"
-                     title="New check in dialog"
-                     data-caption="New check in dialog">
-                <img src="update/Dialog - Check In - Assign.png"
-                     alt="New check in dialog with added assign functionality"
-                     title="New check in dialog with added assign functionality"
-                     data-caption="New check in dialog with added assign functionality">
-            </div>
+        <div class="imageBlock">
+            <img src="update/Dialog - Check In - Assign.png"
+                 alt="Check in dialog with assign option selected. Lists documents to be checked out and has fields for next author assignment."
+                 title="Check in dialog with assign option" />
         </div>
     </div>
 </div>
 
-<div id="content_1"
-     class="contentBlock step1">
+<div class="contentBlock">
     <h3>Analysis</h3>
-    <div class="row">
-        <div class="content">
-            <p>The first thing I wanted to do was to understand how the current check in process worked. I opened the application and completed various scenarios of checking in documents, taking screenshots along the way. This allowed me to create a flow diagram of the current process. I needed to understand the full process before I could interject into it.</p>
-            <p>From here, I noted some issues. The first was there were a lot of dialogs, which netted a lot of clicks. Another issue was that all of these dialogs displayed for each document checked in. 6 dialogs a cycle over 2 documents to check in is a little over 12 clicks to check in.</p>
-            <p>With the check in process being problematic as it was, I started to look at what minor improvements I could make. I diagramed out an ideal workflow pattern, taking into consideration there could be multiple documents being checked in at once. A huge consideration was reducing the number of clicks without losing any information.</p>
+    <div class="content">
+        <div class="textBlock">
+            <p>The first step was to understand how the current check in process worked. I needed to understand the full process before I could interject into it. To assist with this, I created a flow diagram of the current screen.</p>
+            <p>The main issue that stood out to me was that there were a lot of sub dialogs, and these dialogs displayed for each document checked in. There were 6 mains dialogs to check in, and if a user had 3 documents to check in, they’d have 12 clicks to complete the process.</p>
         </div>
-        <div class="teaser">
-            <div class="thumbnails">
-                <img src="old/Multi-Document Check Out (2).png"
-                     alt="Multi-Document Check Out - after each document"
-                     title="Multi-Document Check Out - after each document">
-                <img src="old/Multi-Document Check Out.png"
-                     alt="Multi-Document Check Out - after all documents completed"
-                     title="Multi-Document Check Out - after all documents completed">
-            </div>
-            <div id="open_1"
-                 class="button">Open Gallery</div>
-        </div>
-    </div>
-    <div class="historyNavigation">
-        <div class="button prev"
-             data-step="step0">Summary</div>
-        <div class="button next"
-             data-step="step2">Mockups</div>
-    </div>
-    <div class="gallery">
-        <div class="fixed shadow"></div>
-        <div class="fixed heading">
-            <h3>Analysis</h3>
-            <div id="close_1"
-                 class="button">
-                <img src="../images/close.png"
-                     alt="close gallery"
-                     title="close gallery">
-            </div>
-        </div>
-        <div id="gallery_1"
-             class="fixed galleryBox">
-            <div class="mainImage">
-                <img src=""
-                     alt=""
-                     title="">
-                <div class="caption">
-                    <h4></h4>
-                </div>
-            </div>
-            <div class="thumbnails">
-                <img src="old/Multi-Document Check Out (2).png"
-                     alt="Multi-Document Check Out - after each document"
-                     title="Multi-Document Check Out - after each document"
-                     data-caption="Multi-Document Check Out - after each document">
-                <img src="old/Multi-Document Check Out.png"
-                     alt="Multi-Document Check Out - after all documents completed"
-                     title="Multi-Document Check Out - after all documents completed"
-                     data-caption="Multi-Document Check Out - after all documents completed">
-            </div>
+        <div class="imageBlock">
+            <img src="old/Multi-Document Check In.png"
+                 alt="Multi document check in screen, results version. Reads 3 documents checked in"
+                 title="Check in dialog with assign option" />
+            <img src="old/Multi-Document Check In (2).png"
+                 alt="Multi document check in screen. Reads Checked in 1 of 2"
+                 title="Check in dialog with assign option" />
         </div>
     </div>
 </div>
 
-<div id="content_2"
-     class="contentBlock step2">
+<div class="contentBlock">
+    <h3>User Flow Diagram</h3>
+    <div class="content">
+        <div class="textBlock">
+            <p>Using the flow diagram created in the analysis phase, I created a second file and made my modifications to create an ideal workflow pattern. I combined dialogs where it was reasonable to do so. A huge consideration was reducing the number of clicks without losing any information.</p>
+            <p>I gave both of these to development as a guide for what dialogs to remove and add and help give them an idea of how the new flow would work.</p>
+        </div>
+        <div class="imageBlock">
+            <img src="old/Multi-Document Check In.png"
+                 alt="Multi document check in screen, results version. Reads 3 documents checked in"
+                 title="Check in dialog with assign option" />
+        </div>
+    </div>
+</div>
+
+<div class="contentBlock">
     <h3>Mockups</h3>
-    <div class="row">
-        <div class="content">
-            <p>Starting with a list of data that the application needs to check in a document, I added fields to an empty dialog frame. For check in, this was the list of documents being checked out so the user could verify their selections. For assign, this was setting up the user from a selected workflow to assign the document to. The assign fields were moved into the order that made the most sense for the flow: select a workflow, then select a user from that workflow.</p>
+    <div class="content">
+        <div class="textBlock">
+            <p>Starting with a list of data that the application needs to check in a document, I added fields to an empty dialog frame. The fields were moved into the order that made the most sense for the flow: select a workflow, then select a user from that workflow.</p>
             <p>A results dialog was created by removing the previous check in count and confirmation dialogs. Instead of using a dialog per document, I used one dialog at the end to summarize all the confirmations (both successful and issues).</p>
-            <p>After feedback and discussion, a few changes were made. The dialog went from having versions of single document check out and multi-document check out to only one version that could accommodate multi-document check out. The assign fields had conditions that would make them unavailable. Initially this was hidden behind the checkbox, but they were moved to before the checkbox, while making it disabled.</p>
+            <p>After feedback, the dialog went from having versions of single and multi-document check out to only one version that could accommodate multi-document check out.</p>
         </div>
-        <div class="teaser">
-            <div class="thumbnails">
-                <img src="update/Dialog - Check In.png"
-                     alt="New check in dialog"
-                     title="New check in dialog">
-                <img src="update/Dialog - Check In - Assign.png"
-                     alt="New check in dialog with added assign functionality"
-                     title="New check in dialog with added assign functionality">
-            </div>
-            <div id="open_2"
-                 class="button">Open Gallery</div>
-        </div>
-    </div>
-    <div class="historyNavigation">
-        <div class="button prev"
-             data-step="step1">Analysis</div>
-        <div class="button next"
-             data-step="home">Home</div>
-    </div>
-    <div class="gallery">
-        <div class="fixed shadow"></div>
-        <div class="fixed heading">
-            <h3>Summary</h3>
-            <div id="close_2"
-                 class="button">
-                <img src="../images/close.png"
-                     alt="close gallery"
-                     title="close gallery">
-            </div>
-        </div>
-        <div id="gallery_2"
-             class="fixed galleryBox">
-            <div class="mainImage">
-                <img src=""
-                     alt=""
-                     title="">
-                <div class="caption">
-                    <h4></h4>
-                </div>
-            </div>
-            <div class="thumbnails">
-                <img src="update/Dialog - Check In.png"
-                     alt="New check in dialog"
-                     title="New check in dialog"
-                     data-caption="New check in dialog">
-                <img src="update/Dialog - Check In - Assign.png"
-                     alt="New check in dialog with added assign functionality"
-                     title="New check in dialog with added assign functionality. Assign fields appear on check of box."
-                     data-caption="New check in dialog with added assign functionality">
-                <img src="update/Dialog - Results.png"
-                     alt="New results dialog"
-                     title="New results dialog"
-                     data-caption="New results dialog summarizing the results of all documents checked in">
-            </div>
+        <div class="imageBlock">
+            <img class="hide"
+                 src="update/Dialog - Check In.png"
+                 alt="Check in dialog. Lists documents to be checked out."
+                 title="Check in dialog" />
+            <img src="update/Dialog - Check In - Assign.png"
+                 alt="Check in dialog with assign"
+                 title="Check in dialog with assign option" />
+            <img src="update/Dialog - Results.png"
+                 alt="Lists the results of each document checked in and the totals for successful versus unsuccessful"
+                 title="Results dialog" />
         </div>
     </div>
 </div>

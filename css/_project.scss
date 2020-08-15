@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Imports
+// ==========================================================================
+
+@import 'flex';
+@import 'variables';
+
+// ==========================================================================
+// Project Screen - General
+// ==========================================================================
+
+.project h2 {
+    color: $color-purple;
+    margin: $spacing-base;
+}
+
+// ==========================================================================
+// Project Screen - Navigation
+// ==========================================================================
+
+.subNavigation {
+    @include flexbox;
+    @include flex(0, 0, auto);
+    display: none;
+    height: $size-bar-small;
+    background: $color-blue-light;
+}
+
+.subNavigation .navItem {
+    @include flexbox;
+    @include align-items(center);
+    cursor: pointer;
+    padding: 0 $spacing-base;
+}
+
+.subNavigation h3 {
+    color: $color-black;
+    font-size: 16px;
+}
+
+// hover
+
+.subNavigation .navItem:hover {
+    background: $color-green-dark;
+}
+
+.subNavigation .navItem:hover h3,
+.subNavigation .navItem.selected {
+    color: $color-white;
+}
+
+// active
+
+
+.subNavigation .navItem.selected {
+    background: $color-blue-dark;
+}
+
+
+// ==========================================================================
+// Project Screen - Content Block
+// ==========================================================================
+
+.contentBlock {
+    border-top: $color-grey-light 3px solid;
+    background: $color-white;
+    padding: $spacing-base;
+}
+
+.contentBlock:last-child {
+    margin-top: $spacing-half;
+}
+
+
+// ==========================================================================
+// Project Screen - Content
+// ==========================================================================
+
+.contentBlock .content:last-child {
+    margin-top: $spacing-half;
+}
+
+.contentBlock h3 {
+    margin-bottom: $spacing-base;
+}
+
+.contentBlock .content {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+}
+
+// responsive adjustments
+
+@media only screen and (max-width: $screen-width-medium) {
+
+    .contentBlock .content {
+        @include flex-direction(column);
+    }
+
+}
+
+
+// ==========================================================================
+// Project Screen - Text Block
+// ==========================================================================
+
+.textBlock {
+    @include flex(0, 0, auto);
+    width: 650px;
+}
+
+.textBlock p:not(:last-child) {
+    margin-bottom: $spacing-half;
+}
+
+.textBlock .note {
+    color: $color-grey-dark;
+    font-style: italic;
+}
+
+// responsive adjustments
+
+@media only screen and (max-width: $screen-width-medium) {
+
+    .textBlock {
+        width: auto;
+    }
+
+}
+
+
+// ==========================================================================
+// Project Screen - Image Block
+// ==========================================================================
+
+.imageBlock {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(flex-start);
+    padding-left: $spacing-base;
+}
+
+.imageBlock img {
+    @include flex(0, 0, auto);
+    margin: 0 $spacing-base $spacing-base 0;
+    max-width: 350px;
+}
