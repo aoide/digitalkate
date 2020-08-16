@@ -23,7 +23,10 @@ body {
     font-size: 16px;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4 {
     color: $color-purple;
 }
 
@@ -31,8 +34,12 @@ p {
     line-height: 26px;
 }
 
-a {
+a,
+a h1 {
     color: $color-green;
+}
+
+a {
     font-weight: bold;
     text-decoration: none;
 }
@@ -77,6 +84,20 @@ li {
 
 }
 
+// ==========================================================================
+// Fake Button
+// ==========================================================================
+
+a.button {
+    padding: $spacing-half $spacing-base;
+    background: $color-green;
+    color: $color-white;
+}
+
+a.button:hover {
+    text-decoration: none;
+    background: $color-blue;
+}
 
 // ==========================================================================
 // Sub Import

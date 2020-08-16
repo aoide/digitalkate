@@ -86,6 +86,10 @@
     margin-bottom: $spacing-base;
 }
 
+.contentBlock h4 {
+    text-transform: uppercase;
+}
+
 .contentBlock .content {
     @include flexbox;
     @include flex-direction(row);
@@ -141,13 +145,51 @@
     @include flexbox;
     @include flex-direction(row);
     @include flex-wrap(wrap);
-    @include align-items(flex-start);
+    @include align-items(center);
+    @include justify-content(center);
+    width: 100%;
     padding-left: $spacing-base;
 }
 
-.imageBlock img {
+.imageBlock.column {
+    @include flex-direction(column);
+}
+
+.content + .imageBlock {
+    @include justify-content(flex-start);
+    padding-left: 0;
+    padding-top: $spacing-base;
+}
+
+// images
+
+.imageBlock img  {
     @include flex(0, 0, auto);
     border: 1px solid $color-grey-light;
     margin: 0 $spacing-base $spacing-base 0;
     max-width: 350px;
+}
+
+.imageBlock img.flowchart  {
+    border: 0;
+    max-width: $screen-width-small;
+}
+
+// responsive adjustments
+
+@media only screen and (max-width: $screen-width-medium) {
+
+    .content + .imageBlock {
+        @include flex-direction(column);
+    }
+
+}
+
+@media only screen and (max-width: $screen-width-small) {
+
+    .imageBlock img,
+    .imageBlock img.flowchart  {
+        max-width: 100%;
+    }
+
 }
