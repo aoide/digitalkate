@@ -27,6 +27,10 @@
     padding-right: $spacing-base;
 }
 
+.about h3 {
+    margin-bottom: $spacing-base;
+}
+
 .about p {
     margin-top: $spacing-base;
 }
@@ -60,7 +64,8 @@ $image-size: 250px;
     margin-bottom: $spacing-base;
     position: relative;
     background: $color-white;
-    border: 1px solid $color-grey-light;
+    border-top: 3px $color-grey-light solid;
+    border-bottom: 3px $color-grey-light solid;
 }
 
 // card images
@@ -70,6 +75,7 @@ $image-size: 250px;
     right: auto;
     overflow: hidden;
     width: $image-size;
+    border-right: 1px solid $color-grey-light;
 }
 
 .card img {

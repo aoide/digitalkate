@@ -20,13 +20,11 @@
     @include align-items(center);
     height: $size-bar-small;
     padding: $spacing-base;
-    background: $color-blue-dark;
     overflow: hidden;
 }
 
-.heading h1{
+.heading h1 {
     margin-left: 0;
-    color: $color-white;
     font-size: 18px;
 }
 
@@ -37,15 +35,11 @@
 .icon {
     @include flexbox;
     @include align-items(center);
+    margin-left: auto;
 }
 
 .icon span {
     margin-left: $spacing-half;
-    color: $color-blue-light;
-}
-
-.icon:hover span {
-    text-decoration: underline;
 }
 
 .icon img {
@@ -68,3 +62,21 @@
 .home .icon img {
     height: 36px;
 }
+
+
+// ==========================================================================
+// Project Page Adjustments
+// ==========================================================================
+
+.project .heading {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.heading.scrolled {
+    background: $color-white;
+    border-bottom: 1px solid $color-grey-light;
+}
+
+

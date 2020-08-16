@@ -64,7 +64,7 @@
 // ==========================================================================
 
 .contentBlock {
-    border-top: $color-grey-light 3px solid;
+    border-top: 3px $color-grey-light solid;
     background: $color-white;
     padding: $spacing-base;
 }
@@ -127,6 +127,7 @@
 
     .textBlock {
         width: auto;
+        margin-bottom: $spacing-base;
     }
 
 }
@@ -146,6 +147,7 @@
 
 .imageBlock img {
     @include flex(0, 0, auto);
+    border: 1px solid $color-grey-light;
     margin: 0 $spacing-base $spacing-base 0;
     max-width: 350px;
 }

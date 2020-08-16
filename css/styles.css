@@ -105,13 +105,11 @@ li {
   align-items: center;
   height: 40px;
   padding: 20px;
-  background: black;
   overflow: hidden;
 }
 
 .heading h1 {
   margin-left: 0;
-  color: #FFF;
   font-size: 18px;
 }
 
@@ -126,15 +124,11 @@ li {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  margin-left: auto;
 }
 
 .icon span {
   margin-left: 10px;
-  color: #b8cae3;
-}
-
-.icon:hover span {
-  text-decoration: underline;
 }
 
 .icon img {
@@ -153,6 +147,18 @@ li {
   height: 36px;
 }
 
+.project .heading {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.heading.scrolled {
+  background: #FFF;
+  border-bottom: 1px solid #bfbfbf;
+}
+
 .mainContent {
   padding: 20px;
 }
@@ -166,6 +172,10 @@ li {
   flex: 0 0 auto;
   width: 40%;
   padding-right: 20px;
+}
+
+.about h3 {
+  margin-bottom: 20px;
 }
 
 .about p {
@@ -202,7 +212,8 @@ li {
   margin-bottom: 20px;
   position: relative;
   background: #FFF;
-  border: 1px solid #bfbfbf;
+  border-top: 3px #bfbfbf solid;
+  border-bottom: 3px #bfbfbf solid;
 }
 
 .card .image {
@@ -214,6 +225,7 @@ li {
   right: auto;
   overflow: hidden;
   width: 250px;
+  border-right: 1px solid #bfbfbf;
 }
 
 .card img {
@@ -322,7 +334,7 @@ li {
 }
 
 .contentBlock {
-  border-top: #bfbfbf 3px solid;
+  border-top: 3px #bfbfbf solid;
   background: #FFF;
   padding: 20px;
 }
@@ -389,6 +401,7 @@ li {
 @media only screen and (max-width: 960px) {
   .textBlock {
     width: auto;
+    margin-bottom: 20px;
   }
 }
 .imageBlock {
@@ -422,6 +435,7 @@ li {
   -moz-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  border: 1px solid #bfbfbf;
   margin: 0 20px 20px 0;
   max-width: 350px;
 }
