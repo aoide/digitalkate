@@ -64,13 +64,9 @@
 // ==========================================================================
 
 .contentBlock {
-    border-top: 3px $color-grey-light solid;
+    border-top: 2px $color-grey-light solid;
     background: $color-white;
     padding: $spacing-base;
-}
-
-.contentBlock:last-child {
-    margin-top: $spacing-half;
 }
 
 
@@ -118,11 +114,6 @@
 
 .textBlock p:not(:last-child) {
     margin-bottom: $spacing-half;
-}
-
-.textBlock .note {
-    color: $color-grey-dark;
-    font-style: italic;
 }
 
 // responsive adjustments
@@ -173,6 +164,10 @@
 .imageBlock img.flowchart  {
     border: 0;
     max-width: $screen-width-small;
+}
+
+img.flowchart.large  {
+    max-width: 500px;
 }
 
 // responsive adjustments

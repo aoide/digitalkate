@@ -41,6 +41,11 @@ li {
   display: none !important;
 }
 
+.note {
+  color: #404040;
+  font-style: italic;
+}
+
 .column,
 .row {
   display: -webkit-box;
@@ -229,9 +234,8 @@ a.button:hover {
   flex-direction: row;
   margin-bottom: 20px;
   position: relative;
-  background: #FFF;
-  border-top: 3px #bfbfbf solid;
-  border-bottom: 3px #bfbfbf solid;
+  border-top: 1px #bfbfbf solid;
+  border-bottom: 1px #bfbfbf solid;
 }
 
 .card .image {
@@ -243,14 +247,17 @@ a.button:hover {
   right: auto;
   overflow: hidden;
   width: 250px;
+  height: 100%;
   border-right: 1px solid #bfbfbf;
 }
 
 .card img {
+  height: 100%;
   width: 500px;
 }
 
 .card .content {
+  background: #FFF;
   margin-left: 250px;
   padding: 20px;
 }
@@ -269,6 +276,7 @@ a.button:hover {
 
 @media only screen and (max-width: 700px) {
   .card .content {
+    padding: 20px 0;
     margin-left: 0;
   }
 
@@ -352,13 +360,9 @@ a.button:hover {
 }
 
 .contentBlock {
-  border-top: 3px #bfbfbf solid;
+  border-top: 2px #bfbfbf solid;
   background: #FFF;
   padding: 20px;
-}
-
-.contentBlock:last-child {
-  margin-top: 10px;
 }
 
 .contentBlock .content:last-child {
@@ -413,11 +417,6 @@ a.button:hover {
 
 .textBlock p:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.textBlock .note {
-  color: #404040;
-  font-style: italic;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -490,6 +489,10 @@ a.button:hover {
 .imageBlock img.flowchart {
   border: 0;
   max-width: 700px;
+}
+
+img.flowchart.large {
+  max-width: 500px;
 }
 
 @media only screen and (max-width: 1050px) {
