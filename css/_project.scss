@@ -116,6 +116,12 @@
     margin-bottom: $spacing-half;
 }
 
+.textBlock .buttonRow {
+    @include flexbox;
+    @include justify-content(center);
+    margin-top: $spacing-base;
+}
+
 // responsive adjustments
 
 @media only screen and (max-width: $screen-width-medium) {

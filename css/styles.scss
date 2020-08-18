@@ -94,9 +94,11 @@ li {
 // ==========================================================================
 
 a.button {
+    min-width: 300px;
     padding: $spacing-half $spacing-base;
     background: $color-green;
     color: $color-white;
+    text-align: center;
 }
 
 a.button:hover {
@@ -111,3 +113,4 @@ a.button:hover {
 @import 'header';
 @import 'home';
 @import 'project';
+@import 'gallery';

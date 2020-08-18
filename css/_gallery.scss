@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Imports
+// ==========================================================================
+
+@import 'flex';
+@import 'variables';
+
+// ==========================================================================
+// Wireframe Screen - General
+// ==========================================================================
+
+.gallery {
+    background: $color-white;
+    padding: $spacing-base;
+}
+
+.gallery h2 {
+    margin-bottom: $spacing-base;
+}
+
+
+// ==========================================================================
+// Wireframe Screen - Navigation
+// ==========================================================================
+
+
+
+// ==========================================================================
+// Wireframe Screen - Content
+// ==========================================================================
+
+.galleryBlock {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include align-items(flex-start);
+}
+
+// ==========================================================================
+// Wireframe Screen - Content
+// ==========================================================================
+
+.gallery img {
+    border: 1px solid $color-grey-light;
+    margin: 0 $spacing-base $spacing-base 0;
+    max-width: 600px;
+}
+
+@media only screen and (min-width: $screen-width-medium) {
+
+    .gallery img:hover {
+        max-width: $screen-width-medium - 50px;
+    }
+
+}
+
+@media only screen and (max-width: $screen-width-small) {
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+}
