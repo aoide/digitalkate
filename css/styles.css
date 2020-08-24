@@ -180,7 +180,6 @@ a.button:hover {
 
 .scrolled .heading {
   background: #FFF;
-  border-bottom: 1px solid #bfbfbf;
 }
 
 .mainContent {
@@ -310,13 +309,12 @@ a.button:hover {
   margin-right: 10px;
 }
 
-.project h2 {
-  color: #3C3176;
-  margin: 20px;
-}
-
-.subNavigation {
-  display: none;
+.navigationRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   background: #FFF;
   border-bottom: 1px solid #bfbfbf;
   position: -webkit-sticky;
@@ -325,12 +323,56 @@ a.button:hover {
   top: 41px;
 }
 
+.scrolled .navigationRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 1px solid #bfbfbf;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 40px;
+}
+
+.project h2 {
+  color: #3C3176;
+  margin: 20px;
+}
+
+.project.scrolled h2 {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1em;
+  margin: 0 20px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .project.scrolled h2 {
+    margin: 10px 20px;
+  }
+}
+.subNavigation {
+  display: none;
+}
+
 .scrolled .subNavigation {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  border-top: 1px solid #bfbfbf;
 }
 
 .subNavigation .navItem {
@@ -348,6 +390,7 @@ a.button:hover {
 }
 
 .subNavigation h3 {
+  color: #246D5E;
   font-size: 1em;
 }
 
@@ -366,7 +409,8 @@ a.button:hover {
 }
 
 @media only screen and (max-width: 1050px) {
-  .subNavigation {
+  .subNavigation,
+.scrolled .subNavigation {
     display: none;
   }
 }
