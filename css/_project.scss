@@ -21,42 +21,52 @@
 // ==========================================================================
 
 .subNavigation {
-    @include flexbox;
-    @include flex(0, 0, auto);
     display: none;
-    height: $size-bar-small;
-    background: $color-blue-light;
+    background: $color-white;
+    border-bottom: 1px solid $color-grey-light;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: $size-bar-small + 1;
+}
+
+.scrolled .subNavigation {
+    @include flexbox;
 }
 
 .subNavigation .navItem {
     @include flexbox;
     @include align-items(center);
-    cursor: pointer;
-    padding: 0 $spacing-base;
+    padding: $spacing-half $spacing-base;
 }
 
 .subNavigation h3 {
-    color: $color-black;
-    font-size: 16px;
+    font-size: 1em;
 }
 
-// hover
-
-.subNavigation .navItem:hover {
-    background: $color-green-dark;
+.subNavigation .navItem.active {
+    background: $color-green;
 }
 
-.subNavigation .navItem:hover h3,
-.subNavigation .navItem.selected {
+.subNavigation .navItem:not(.active):hover {
+    background: $color-blue;
+    cursor: pointer;
+}
+
+.subNavigation .navItem.active h3,
+.subNavigation .navItem:not(.active):hover h3 {
     color: $color-white;
 }
 
-// active
+// responsive adjustments
 
+@media only screen and (max-width: $screen-width-medium) {
 
-.subNavigation .navItem.selected {
-    background: $color-blue-dark;
+    .subNavigation {
+        display: none;
+    }
+
 }
+
 
 
 // ==========================================================================

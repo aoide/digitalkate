@@ -122,26 +122,27 @@ $image-size: 250px;
 // Home Screen - Specific Card Adjustments
 // ==========================================================================
 
+.card.des img {
+    width: $image-size * 1.5;
+}
+
 .card.authorpro img {
-    width: $image-size * 1.2;
+    width: $image-size * 2;
 }
 
 // ==========================================================================
-// Home Screen - Tag
+// Tags
 // ==========================================================================
 
-.tag {
-    margin-top: auto;
-    padding: $spacing-base;
-    color: $color-grey;
-    font-weight: bold;
-    font-size: 3.5em;
+.tags {
+    @include flexbox;
+    font-size: .8em;
+    color: $color-white;
 }
 
-.tag p {
-    line-height: 60px;
-}
-
-.tag .hilight {
-    color: $color-purple-light;
+.tags div {
+    background: $color-purple-light;
+    padding: $spacing-half / 2 $spacing-half;
+    border-radius: $spacing-half / 2;
+    margin-right: $spacing-half;
 }

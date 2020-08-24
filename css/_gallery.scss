@@ -48,14 +48,6 @@
     max-width: 600px;
 }
 
-@media only screen and (min-width: $screen-width-medium) {
-
-    .gallery img:hover {
-        max-width: $screen-width-medium - 50px;
-    }
-
-}
-
 @media only screen and (max-width: $screen-width-small) {
 
     .gallery img {

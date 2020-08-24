@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 body {
-  background-image: url("../images/background.png");
-  background-repeat: no-repeat;
-  background-position: "left" "top";
   height: 100%;
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
@@ -20,7 +17,9 @@ p {
 }
 
 a,
-a h1 {
+a h1,
+a h2,
+a h3 {
   color: #246D5E;
 }
 
@@ -179,7 +178,7 @@ a.button:hover {
   top: 0;
 }
 
-.heading.scrolled {
+.scrolled .heading {
   background: #FFF;
   border-bottom: 1px solid #bfbfbf;
 }
@@ -286,24 +285,29 @@ a.button:hover {
     display: none;
   }
 }
+.card.des img {
+  width: 375px;
+}
+
 .card.authorpro img {
-  width: 300px;
+  width: 500px;
 }
 
-.tag {
-  margin-top: auto;
-  padding: 20px;
-  color: gray;
-  font-weight: bold;
-  font-size: 3.5em;
+.tags {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8em;
+  color: #FFF;
 }
 
-.tag p {
-  line-height: 60px;
-}
-
-.tag .hilight {
-  color: #847CAF;
+.tags div {
+  background: #847CAF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .project h2 {
@@ -312,20 +316,21 @@ a.button:hover {
 }
 
 .subNavigation {
+  display: none;
+  background: #FFF;
+  border-bottom: 1px solid #bfbfbf;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 41px;
+}
+
+.scrolled .subNavigation {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  display: none;
-  height: 40px;
-  background: #b8cae3;
 }
 
 .subNavigation .navItem {
@@ -339,28 +344,32 @@ a.button:hover {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  cursor: pointer;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .subNavigation h3 {
-  color: #000;
-  font-size: 16px;
+  font-size: 1em;
 }
 
-.subNavigation .navItem:hover {
-  background: #00372D;
+.subNavigation .navItem.active {
+  background: #246D5E;
 }
 
-.subNavigation .navItem:hover h3,
-.subNavigation .navItem.selected {
+.subNavigation .navItem:not(.active):hover {
+  background: #2C4870;
+  cursor: pointer;
+}
+
+.subNavigation .navItem.active h3,
+.subNavigation .navItem:not(.active):hover h3 {
   color: #FFF;
 }
 
-.subNavigation .navItem.selected {
-  background: black;
+@media only screen and (max-width: 1050px) {
+  .subNavigation {
+    display: none;
+  }
 }
-
 .contentBlock {
   border-top: 2px #bfbfbf solid;
   background: #FFF;
@@ -565,11 +574,6 @@ img.flowchart.large {
   max-width: 600px;
 }
 
-@media only screen and (min-width: 1050px) {
-  .gallery img:hover {
-    max-width: 1000px;
-  }
-}
 @media only screen and (max-width: 700px) {
   .gallery img {
     max-width: 100%;
