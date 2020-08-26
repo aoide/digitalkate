@@ -136,13 +136,16 @@ $image-size: 250px;
 
 .tags {
     @include flexbox;
+    @include align-items(flex-start);
+    @include flex-wrap(wrap);
     font-size: .8em;
     color: $color-white;
 }
 
 .tags div {
+    @include flex(0, 0, auto);
     background: $color-purple-light;
     padding: $spacing-half / 2 $spacing-half;
     border-radius: $spacing-half / 2;
-    margin-right: $spacing-half;
+    margin: 0 $spacing-half $spacing-half 0;
 }
