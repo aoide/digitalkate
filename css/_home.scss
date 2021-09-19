@@ -140,6 +140,7 @@ $image-size: 250px;
     @include flex-wrap(wrap);
     font-size: .8em;
     color: $color-white;
+    pointer-events: none;
 }
 
 .tags div {

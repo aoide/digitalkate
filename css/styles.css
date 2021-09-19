@@ -309,6 +309,7 @@ a.button:hover {
   flex-wrap: wrap;
   font-size: 0.8em;
   color: #FFF;
+  pointer-events: none;
 }
 
 .tags div {

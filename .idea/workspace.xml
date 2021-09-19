@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -20,6 +23,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -34,25 +38,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="717" y="404" key="#Sass_Lint" timestamp="1598466554073">
+    <state x="640" y="295" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1632058079366">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="717" y="404" key="#Sass_Lint/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1598466554073" />
-    <state x="701" y="332" key="EditFileWatcherDialog" timestamp="1597412751498">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="701" y="332" key="EditFileWatcherDialog/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1597412751498" />
-    <state x="534" y="199" key="SettingsEditor" timestamp="1598198576647">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="534" y="199" key="SettingsEditor/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1598198576647" />
-    <state x="620" y="243" key="new project wizard" timestamp="1601726383727">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="620" y="243" key="new project wizard/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1601726383727" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1598301656248">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1598301656248" />
+    <state x="640" y="295" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1920.1040/1920.40.1920.1040@0.40.1920.1040" timestamp="1632058079366" />
   </component>
 </project>
