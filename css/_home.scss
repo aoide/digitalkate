@@ -25,26 +25,20 @@
     @include flex(0, 0, auto);
     width: 40%;
     padding-right: $spacing-base;
-}
 
-.about h3 {
-    margin-bottom: $spacing-base;
-}
-
-.about p {
-    margin-top: $spacing-base;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .about {
+    @media only screen and (max-width: $screen-width-medium) {
         width: 100%;
         padding-right: 0;
         margin-bottom: $spacing-base;
     }
 
+    h3 {
+        margin-bottom: $spacing-base;
+    }
+
+    p {
+        margin-top: $spacing-base;
+    }
 }
 
 
@@ -65,69 +59,65 @@ $image-size: 250px;
     position: relative;
     border-top: 1px $color-grey-light solid;
     border-bottom: 1px $color-grey-light solid;
-}
 
-// card images
+    // card images
 
-.card .image {
-    @include fixed;
-    right: auto;
-    overflow: hidden;
-    width: $image-size;
-    height: 100%;
-    border-right: 1px solid $color-grey-light;
-}
+    .image {
+        @include fixed;
+        right: auto;
+        overflow: hidden;
+        width: $image-size;
+        height: 100%;
+        border-right: 1px solid $color-grey-light;
 
-.card img {
-    height: 100%;
-    width: $image-size * 2;
-}
-
-// card content
-
-.card .content {
-    background: $color-white;
-    margin-left: $image-size;
-    padding: $spacing-base;
-}
-
-.card h3 {
-    margin-bottom: $spacing-base;
-}
-
-.card .content p:not(:last-child) {
-    margin-bottom: $spacing-base;
-}
-
-.card .readMore {
-    text-align: right;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-small) {
-
-    .card .content {
-        padding: $spacing-base 0;
-        margin-left: 0;
+        @media only screen and (max-width: $screen-width-small) {
+            display: none;
+        }
     }
 
-    .card .image {
-        display: none;
+    img {
+        height: 100%;
+        width: $image-size * 2;
     }
 
+    // card content
+
+    .content {
+        background: $color-white;
+        margin-left: $image-size;
+        padding: $spacing-base;
+
+        @media only screen and (max-width: $screen-width-small) {
+            padding: $spacing-base 0;
+            margin-left: 0;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: $spacing-base;
+        }
+    }
+
+    h3 {
+        margin-bottom: $spacing-base;
+    }
+
+    .readMore {
+        text-align: right;
+    }
 }
 
 // ==========================================================================
-// Home Screen - Specific Card Adjustments
+// Home Screen - Specific Card Adjustment
 // ==========================================================================
 
-.card.des img {
-    width: $image-size * 1.5;
-}
+.card {
+    &.des img {
+        width: $image-size * 1.5;
+    }
 
-.card.authorpro img {
-    width: $image-size * 2;
+    &.authorpro img {
+        width: $image-size * 2;
+    }
 }
 
 // ==========================================================================
@@ -141,12 +131,16 @@ $image-size: 250px;
     font-size: .8em;
     color: $color-white;
     pointer-events: none;
-}
 
-.tags div {
-    @include flex(0, 0, auto);
-    background: $color-purple-light;
-    padding: $spacing-half / 2 $spacing-half;
-    border-radius: $spacing-half / 2;
-    margin: 0 $spacing-half $spacing-half 0;
+    div {
+        @include flex(0, 0, auto);
+        background: $color-purple-light;
+        padding: $spacing-half / 2 $spacing-half;
+        border-radius: $spacing-half / 2;
+        margin: 0 $spacing-half $spacing-half 0;
+
+        &.issue {
+            background: $color-red;
+        }
+    }
 }

@@ -93,7 +93,6 @@ a.button {
   color: #FFF;
   text-align: center;
 }
-
 a.button:hover {
   text-decoration: none;
   background: #2C4870;
@@ -131,7 +130,6 @@ a.button:hover {
   padding: 20px;
   overflow: hidden;
 }
-
 .heading h1 {
   margin-left: 0;
   font-size: 18px;
@@ -150,11 +148,9 @@ a.button:hover {
   align-items: center;
   margin-left: auto;
 }
-
 .icon span {
   margin-left: 10px;
 }
-
 .icon img {
   height: 28px;
 }
@@ -162,11 +158,9 @@ a.button:hover {
 .home .heading {
   height: 80px;
 }
-
 .home h1 {
   font-size: 32px;
 }
-
 .home .icon img {
   height: 36px;
 }
@@ -196,15 +190,6 @@ a.button:hover {
   width: 40%;
   padding-right: 20px;
 }
-
-.about h3 {
-  margin-bottom: 20px;
-}
-
-.about p {
-  margin-top: 20px;
-}
-
 @media only screen and (max-width: 1050px) {
   .about {
     width: 100%;
@@ -212,6 +197,13 @@ a.button:hover {
     margin-bottom: 20px;
   }
 }
+.about h3 {
+  margin-bottom: 20px;
+}
+.about p {
+  margin-top: 20px;
+}
+
 .cardList {
   display: -webkit-box;
   display: -webkit-flex;
@@ -237,7 +229,6 @@ a.button:hover {
   border-top: 1px #bfbfbf solid;
   border-bottom: 1px #bfbfbf solid;
 }
-
 .card .image {
   position: absolute;
   top: 0;
@@ -250,44 +241,39 @@ a.button:hover {
   height: 100%;
   border-right: 1px solid #bfbfbf;
 }
-
+@media only screen and (max-width: 700px) {
+  .card .image {
+    display: none;
+  }
+}
 .card img {
   height: 100%;
   width: 500px;
 }
-
 .card .content {
   background: #FFF;
   margin-left: 250px;
   padding: 20px;
 }
-
-.card h3 {
-  margin-bottom: 20px;
-}
-
-.card .content p:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.card .readMore {
-  text-align: right;
-}
-
 @media only screen and (max-width: 700px) {
   .card .content {
     padding: 20px 0;
     margin-left: 0;
   }
-
-  .card .image {
-    display: none;
-  }
 }
+.card .content p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.card h3 {
+  margin-bottom: 20px;
+}
+.card .readMore {
+  text-align: right;
+}
+
 .card.des img {
   width: 375px;
 }
-
 .card.authorpro img {
   width: 500px;
 }
@@ -311,7 +297,6 @@ a.button:hover {
   color: #FFF;
   pointer-events: none;
 }
-
 .tags div {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -323,6 +308,9 @@ a.button:hover {
   padding: 5px 10px;
   border-radius: 5px;
   margin: 0 10px 10px 0;
+}
+.tags div.issue {
+  background: #AD1710;
 }
 
 .navigationRow {
@@ -362,7 +350,6 @@ a.button:hover {
   color: #3C3176;
   margin: 20px;
 }
-
 .project.scrolled h2 {
   -webkit-align-self: center;
   -moz-align-self: center;
@@ -372,25 +359,24 @@ a.button:hover {
   margin: 0 20px;
   height: 100%;
 }
-
 @media only screen and (max-width: 1050px) {
   .project.scrolled h2 {
     margin: 10px 20px;
   }
 }
+
 .subNavigation {
   display: none;
 }
-
-.scrolled .subNavigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top: 1px solid #bfbfbf;
+@media only screen and (max-width: 1050px) {
+  .subNavigation {
+    display: none;
+  }
 }
-
+.subNavigation h3 {
+  color: #246D5E;
+  font-size: 1em;
+}
 .subNavigation .navItem {
   display: -webkit-box;
   display: -webkit-flex;
@@ -404,50 +390,43 @@ a.button:hover {
   align-items: center;
   padding: 10px 20px;
 }
-
-.subNavigation h3 {
-  color: #246D5E;
-  font-size: 1em;
-}
-
 .subNavigation .navItem.active {
   background: #246D5E;
 }
-
 .subNavigation .navItem:not(.active):hover {
   background: #2C4870;
   cursor: pointer;
 }
-
-.subNavigation .navItem.active h3,
-.subNavigation .navItem:not(.active):hover h3 {
+.subNavigation .navItem.active h3, .subNavigation .navItem:not(.active):hover h3 {
   color: #FFF;
 }
 
-@media only screen and (max-width: 1050px) {
-  .subNavigation,
 .scrolled .subNavigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #bfbfbf;
+}
+@media only screen and (max-width: 1050px) {
+  .scrolled .subNavigation {
     display: none;
   }
 }
+
 .contentBlock {
   border-top: 2px #bfbfbf solid;
   background: #FFF;
   padding: 20px;
 }
 
-.contentBlock .content:last-child {
-  margin-top: 10px;
-}
-
 .contentBlock h3 {
   margin-bottom: 20px;
 }
-
 .contentBlock h4 {
   text-transform: uppercase;
 }
-
 .contentBlock .content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -465,7 +444,6 @@ a.button:hover {
   -ms-flex-wrap: none;
   flex-wrap: nowrap;
 }
-
 @media only screen and (max-width: 1050px) {
   .contentBlock .content {
     -webkit-box-direction: normal;
@@ -476,6 +454,10 @@ a.button:hover {
     flex-direction: column;
   }
 }
+.contentBlock .content:last-child {
+  margin-top: 10px;
+}
+
 .textBlock {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -485,11 +467,15 @@ a.button:hover {
   flex: 0 0 auto;
   width: 650px;
 }
-
+@media only screen and (max-width: 1050px) {
+  .textBlock {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
 .textBlock p:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .textBlock .buttonRow {
   display: -webkit-box;
   display: -webkit-flex;
@@ -504,12 +490,6 @@ a.button:hover {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 1050px) {
-  .textBlock {
-    width: auto;
-    margin-bottom: 20px;
-  }
-}
 .imageBlock {
   display: -webkit-box;
   display: -webkit-flex;
@@ -539,7 +519,6 @@ a.button:hover {
   width: 100%;
   padding-left: 20px;
 }
-
 .imageBlock.column {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -548,17 +527,6 @@ a.button:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
-.content + .imageBlock {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  justify-content: flex-start;
-  padding-left: 0;
-  padding-top: 20px;
-}
-
 .imageBlock img {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -570,16 +538,33 @@ a.button:hover {
   margin: 0 20px 20px 0;
   max-width: 350px;
 }
-
 .imageBlock img.flowchart {
   border: 0;
   max-width: 700px;
 }
-
-img.flowchart.large {
+.imageBlock img.flowchart.large {
   max-width: 500px;
 }
+@media only screen and (max-width: 700px) {
+  .imageBlock img.flowchart {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .imageBlock img {
+    max-width: 100%;
+  }
+}
 
+.content + .imageBlock {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-top: 20px;
+}
 @media only screen and (max-width: 1050px) {
   .content + .imageBlock {
     -webkit-box-direction: normal;
@@ -590,17 +575,11 @@ img.flowchart.large {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 700px) {
-  .imageBlock img,
-.imageBlock img.flowchart {
-    max-width: 100%;
-  }
-}
+
 .gallery {
   background: #FFF;
   padding: 20px;
 }
-
 .gallery h2 {
   margin-bottom: 20px;
 }
@@ -633,7 +612,6 @@ img.flowchart.large {
   margin: 0 20px 20px 0;
   max-width: 600px;
 }
-
 @media only screen and (max-width: 700px) {
   .gallery img {
     max-width: 100%;

@@ -34,27 +34,24 @@
 // Project Screen - General
 // ==========================================================================
 
-.project h2 {
-    color: $color-purple;
-    margin: $spacing-base;
-}
-
-.project.scrolled h2 {
-    @include align-self(center);
-    font-size: 1em;
-    margin: 0 $spacing-base;
-    height: 100%;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .project.scrolled h2 {
-        margin: $spacing-half $spacing-base;
+.project {
+    h2 {
+        color: $color-purple;
+        margin: $spacing-base;
     }
 
+    &.scrolled h2 {
+        @include align-self(center);
+        font-size: 1em;
+        margin: 0 $spacing-base;
+        height: 100%;
+
+        @media only screen and (max-width: $screen-width-medium) {
+            margin: $spacing-half $spacing-base;
+        }
+    }
 }
+
 
 
 // ==========================================================================
@@ -63,49 +60,45 @@
 
 .subNavigation {
     display: none;
+
+    @media only screen and (max-width: $screen-width-medium) {
+        display: none;
+    }
+
+    h3 {
+        color: $color-green;
+        font-size: 1em;
+    }
+
+    .navItem {
+        @include flexbox;
+        @include align-items(center);
+        padding: $spacing-half $spacing-base;
+
+        &.active {
+            background: $color-green;
+        }
+
+        &:not(.active):hover {
+            background: $color-blue;
+            cursor: pointer;
+        }
+
+        &.active h3,
+        &:not(.active):hover h3 {
+            color: $color-white;
+        }
+    }
 }
 
 .scrolled .subNavigation {
     @include flexbox;
     border-top: 1px solid $color-grey-light;
-}
 
-.subNavigation .navItem {
-    @include flexbox;
-    @include align-items(center);
-    padding: $spacing-half $spacing-base;
-}
-
-.subNavigation h3 {
-    color: $color-green;
-    font-size: 1em;
-}
-
-.subNavigation .navItem.active {
-    background: $color-green;
-}
-
-.subNavigation .navItem:not(.active):hover {
-    background: $color-blue;
-    cursor: pointer;
-}
-
-.subNavigation .navItem.active h3,
-.subNavigation .navItem:not(.active):hover h3 {
-    color: $color-white;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .subNavigation,
-    .scrolled .subNavigation {
+    @media only screen and (max-width: $screen-width-medium) {
         display: none;
     }
-
 }
-
 
 
 // ==========================================================================
@@ -123,32 +116,28 @@
 // Project Screen - Content
 // ==========================================================================
 
-.contentBlock .content:last-child {
-    margin-top: $spacing-half;
-}
-
-.contentBlock h3 {
-    margin-bottom: $spacing-base;
-}
-
-.contentBlock h4 {
-    text-transform: uppercase;
-}
-
-.contentBlock .content {
-    @include flexbox;
-    @include flex-direction(row);
-    @include flex-wrap(nowrap);
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .contentBlock .content {
-        @include flex-direction(column);
+.contentBlock {
+    h3 {
+        margin-bottom: $spacing-base;
     }
 
+    h4 {
+        text-transform: uppercase;
+    }
+
+    .content {
+        @include flexbox;
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+
+        @media only screen and (max-width: $screen-width-medium) {
+            @include flex-direction(column);
+        }
+
+        &:last-child {
+            margin-top: $spacing-half;
+        }
+    }
 }
 
 
@@ -159,27 +148,21 @@
 .textBlock {
     @include flex(0, 0, auto);
     width: 650px;
-}
 
-.textBlock p:not(:last-child) {
-    margin-bottom: $spacing-half;
-}
-
-.textBlock .buttonRow {
-    @include flexbox;
-    @include justify-content(center);
-    margin-top: $spacing-base;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .textBlock {
+    @media only screen and (max-width: $screen-width-medium) {
         width: auto;
         margin-bottom: $spacing-base;
     }
 
+    p:not(:last-child) {
+        margin-bottom: $spacing-half;
+    }
+
+    .buttonRow {
+        @include flexbox;
+        @include justify-content(center);
+        margin-top: $spacing-base;
+    }
 }
 
 
@@ -195,51 +178,42 @@
     @include justify-content(center);
     width: 100%;
     padding-left: $spacing-base;
-}
 
-.imageBlock.column {
-    @include flex-direction(column);
+    &.column {
+        @include flex-direction(column);
+    }
+
+    img  {
+        @include flex(0, 0, auto);
+        border: 1px solid $color-grey-light;
+        margin: 0 $spacing-base $spacing-base 0;
+        max-width: 350px;
+
+        &.flowchart  {
+            border: 0;
+            max-width: $screen-width-small;
+
+            &.large  {
+                max-width: 500px;
+            }
+
+            @media only screen and (max-width: $screen-width-small) {
+                max-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: $screen-width-small) {
+            max-width: 100%;
+        }
+    }
 }
 
 .content + .imageBlock {
     @include justify-content(flex-start);
     padding-left: 0;
     padding-top: $spacing-base;
-}
 
-// images
-
-.imageBlock img  {
-    @include flex(0, 0, auto);
-    border: 1px solid $color-grey-light;
-    margin: 0 $spacing-base $spacing-base 0;
-    max-width: 350px;
-}
-
-.imageBlock img.flowchart  {
-    border: 0;
-    max-width: $screen-width-small;
-}
-
-img.flowchart.large  {
-    max-width: 500px;
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .content + .imageBlock {
-        @include flex-direction(column);
+    @media only screen and (max-width: $screen-width-medium) {
+        @include flex-direction(column)
     }
-
-}
-
-@media only screen and (max-width: $screen-width-small) {
-
-    .imageBlock img,
-    .imageBlock img.flowchart  {
-        max-width: 100%;
-    }
-
 }

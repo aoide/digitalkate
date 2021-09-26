@@ -21,11 +21,11 @@
     height: $size-bar-small;
     padding: $spacing-base;
     overflow: hidden;
-}
 
-.heading h1 {
-    margin-left: 0;
-    font-size: 18px;
+    h1 {
+        margin-left: 0;
+        font-size: 18px;
+    }
 }
 
 
@@ -37,14 +37,14 @@
     @include flexbox;
     @include align-items(center);
     margin-left: auto;
-}
 
-.icon span {
-    margin-left: $spacing-half;
-}
+    span {
+        margin-left: $spacing-half;
+    }
 
-.icon img {
-    height: 28px;
+    img {
+        height: 28px;
+    }
 }
 
 
@@ -52,16 +52,18 @@
 // Home Page Adjustments
 // ==========================================================================
 
-.home .heading {
-    height: $size-bar;
-}
+.home {
+    .heading {
+        height: $size-bar;
+    }
 
-.home h1 {
-    font-size: 32px;
-}
+    h1 {
+        font-size: 32px;
+    }
 
-.home .icon img {
-    height: 36px;
+    .icon img {
+        height: 36px;
+    }
 }
 
 

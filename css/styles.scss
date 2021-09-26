@@ -100,11 +100,11 @@ a.button {
     background: $color-green;
     color: $color-white;
     text-align: center;
-}
 
-a.button:hover {
-    text-decoration: none;
-    background: $color-blue;
+    &:hover {
+        text-decoration: none;
+        background: $color-blue;
+    }
 }
 
 // ==========================================================================
