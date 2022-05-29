@@ -6,7 +6,6 @@
 
 @import 'flex';
 @import 'variables';
-@import 'mixins';
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -17,101 +16,241 @@
 // ==========================================================================
 
 body {
-    height: 100%;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
+    color: $color-text;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: $color-purple;
-}
-
-p {
-    line-height: 26px;
-}
-
-a,
-a h1,
-a h2,
-a h3 {
-    color: $color-green;
+h1, h2, h3, h4 {
+    color: $color-heading;
 }
 
 a {
-    font-weight: bold;
+    color: $color-button;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+        color: $color-button-hover;
+        border-bottom-color: $color-button-hover;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
+button,
+.button {
+    @include flexbox;
+    @include justify-content(center);
+    background: $color-button;
+    color: $color-button-text;
+    border-radius: $border-radius;
+    padding: $spacing-half $spacing-base;
+    margin-top: auto;
+    border: 0;
+    font-weight: normal;
+
+    &:hover {
+        background: $color-button-hover;
+        color: $color-button-text;
+    }
 }
 
-li {
-    margin-bottom: $spacing-half;
-}
-
-.hide {
-    display: none !important;
+li,
+p {
+    margin-top: $spacing-half;
 }
 
 .note {
-    color: $color-grey-dark;
     font-style: italic;
+    font-size: .8em;
 }
 
 // ==========================================================================
-// Structure
+// Heading
 // ==========================================================================
 
-.column,
-.row {
+.heading {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    margin: $spacing-base;
+    padding-bottom: $spacing-base;
+    border-bottom: 2px solid $color-border;
+
+    img {
+        width: 30px;
+    }
+}
+
+.heading-menu {
+    @include flexbox;
+    @include align-items(center);
+
+    a {
+        margin-right: $spacing-base;
+    }
+}
+
+
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+.navigation-row {
+    padding: $spacing-base;
+}
+
+
+// ==========================================================================
+// Content
+// ==========================================================================
+
+.main-content,
+.content {
     @include flexbox;
 }
 
-.column {
-    @include flex-direction(column);
-}
+.main-content {
+    margin: $spacing-base;
 
-.row {
-    @include flex-basis(100%);
-    @include flex-direction(row);
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .row {
+    @media only screen and (max-width: $screen-width-large) {
         @include flex-direction(column);
     }
-
 }
 
-// ==========================================================================
-// Fake Button
-// ==========================================================================
+.gallery,
+.contentBlock {
+    padding: $spacing-base;
+}
 
-a.button {
-    min-width: 300px;
-    padding: $spacing-half $spacing-base;
-    background: $color-green;
-    color: $color-white;
-    text-align: center;
+.content {
+    @include flex-direction(column);
 
-    &:hover {
-        text-decoration: none;
-        background: $color-blue;
+    .imageBlock {
+        margin-top: $spacing-base;
+
+        img {
+            max-width: 32%;
+            max-height: 400px;
+            margin-bottom: $spacing-base;
+            box-shadow: 0 0 3px 0 #000000;
+
+            &:not(:last-of-type) {
+                margin-right: $spacing-half;
+            }
+
+            @media only screen and (max-width: $screen-width-medium) {
+                max-width: 48%;
+            }
+
+            @media only screen and (max-width: $screen-width-small) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: $screen-width-large) {
+    .about {
+        margin-bottom: $spacing-base;
     }
 }
 
 // ==========================================================================
-// Sub Import
+// Cards
 // ==========================================================================
 
-@import 'header';
-@import 'home';
-@import 'project';
-@import 'gallery';
+.card-list {
+    @include flexbox;
+    @include flex-direction(column);
+
+    .card {
+        @include flexbox;
+        box-shadow: 0 0 3px 0 #000000;
+
+        @media only screen and (max-width: $screen-width-small) {
+            @include flex-direction(column);
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: $spacing-base;
+        }
+
+        .image {
+            @media only screen and (max-width: $screen-width-medium) {
+                width: 50%;
+            }
+            @media only screen and (max-width: $screen-width-small) {
+                width: 100%;
+            }
+
+            img {
+                width: 400px;
+
+                @media only screen and (max-width: $screen-width-medium) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .content {
+            padding: $spacing-half;
+            width: 100%;
+        }
+    }
+}
+
+// ==========================================================================
+// Tags
+// ==========================================================================
+
+.tag-list {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    margin-top: $spacing-base;
+
+    .tag {
+        background: $color-heading;
+        color: $color-white;
+        padding: 3px $spacing-half;
+        border-radius: $border-radius;
+        font-size: .8em;
+        white-space: nowrap;
+        margin-bottom: $spacing-half;
+
+        &:not(:last-of-type) {
+            margin-right: $spacing-half;
+        }
+
+        &.issue {
+            background: $color-flag;
+        }
+    }
+}
+
+// ==========================================================================
+// Galleries
+// ==========================================================================
+
+.gallery-list {
+    margin-top: $spacing-base;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: $spacing-base;
+    row-gap: $spacing-base;
+
+    @media only screen and (max-width: $screen-width-medium) {
+        grid-template-columns: 48.5% 48.5%;
+    }
+
+    @media only screen and (max-width: $screen-width-small) {
+        grid-template-columns: 100%;
+    }
+
+    img {
+        width: 100%;
+        box-shadow: 0 0 3px 0 #000000;
+    }
+}
