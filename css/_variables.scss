@@ -36,6 +36,7 @@ $border-radius: 7px;
 $color-white: #FFF;
 $color-black: #000;
 $color-grey: #5E6F88;
+$color-grey-light: #C2C9D5;
 
 // blues (main)
 $color-blue: #2C4870;
@@ -51,7 +52,7 @@ $color-red: #AD1710;
 // objects
 $color-text: $color-grey;
 $color-heading: $color-blue;
-$color-border: $color-blue-light;
+$color-border: $color-grey-light;
 
 $color-button: $color-green;
 $color-button-hover: $color-green-light;

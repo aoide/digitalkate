@@ -32,9 +32,14 @@ a {
     transition: all .5s ease-in-out;
     font-weight: bold;
 
-    &:hover {
+    &:hover,
+    &.active {
         color: $color-button-hover;
         border-bottom-color: $color-button-hover;
+    }
+
+    &.active {
+        pointer-events: none;
     }
 }
 
@@ -81,14 +86,26 @@ p {
     img {
         width: 30px;
     }
+
+    @media only screen and (max-width: $screen-width-small) {
+        @include flex-direction(column);
+
+        .heading-text {
+            text-align: center;
+        }
+    }
 }
 
 .heading-menu {
     @include flexbox;
     @include align-items(center);
 
-    a {
+    a:not(:last-of-type) {
         margin-right: $spacing-base;
+    }
+
+    @media only screen and (max-width: $screen-width-small) {
+        margin-top: $spacing-base;
     }
 }
 
@@ -124,6 +141,21 @@ p {
     padding: $spacing-base;
 }
 
+.contentBlock {
+    position: relative;
+
+    &:before {
+        content: " ";
+        height: 2px;
+        background: $color-border;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        opacity: .3;
+    }
+}
+
 .content {
     @include flex-direction(column);
 
@@ -134,7 +166,7 @@ p {
             max-width: 32%;
             max-height: 400px;
             margin-bottom: $spacing-base;
-            box-shadow: 0 0 3px 0 #000000;
+            box-shadow: 0 0 3px 0 $color-black;
 
             &:not(:last-of-type) {
                 margin-right: $spacing-half;
@@ -148,6 +180,10 @@ p {
                 max-width: 100%;
             }
         }
+    }
+
+    .buttonRow {
+        margin-top: $spacing-base;
     }
 }
 
@@ -168,7 +204,7 @@ p {
 
     .card {
         @include flexbox;
-        box-shadow: 0 0 3px 0 #000000;
+        box-shadow: 0 0 3px 0 $color-black;
 
         @media only screen and (max-width: $screen-width-small) {
             @include flex-direction(column);
@@ -234,23 +270,26 @@ p {
 // Galleries
 // ==========================================================================
 
+.gallery {
+    h2 {
+        margin-bottom: $spacing-base;
+    }
+
+    .lightboxed--caption {
+        font-size: 1.5em;
+    }
+}
+
 .gallery-list {
-    margin-top: $spacing-base;
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    column-gap: $spacing-base;
-    row-gap: $spacing-base;
-
-    @media only screen and (max-width: $screen-width-medium) {
-        grid-template-columns: 48.5% 48.5%;
-    }
-
-    @media only screen and (max-width: $screen-width-small) {
-        grid-template-columns: 100%;
-    }
-
     img {
-        width: 100%;
-        box-shadow: 0 0 3px 0 #000000;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: $spacing-half;
+        border: 1px solid $color-grey-light;
+
+        @media only screen and (max-width: $screen-width-small) {
+            width: 100%;
+        }
     }
 }

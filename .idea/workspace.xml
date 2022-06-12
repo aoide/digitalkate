@@ -2,55 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61ef65d0-906d-4ff2-8951-23251ac31048" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/flowcharts/flow-chart_-_new_check_in.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/flowcharts/flow-chart_-_old_check_in.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/old/Multi-Document Check In (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/old/Multi-Document Check In.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/update/Dialog - Check In - Assign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/update/Dialog - Check In.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/update/Dialog - Results.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_gallery.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_project.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/flowcharts/flow-chart_-_new_reporting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/flowcharts/flow-chart_-_old_reporting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/mockups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Dashboard 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Dashboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Documents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Dialog - Edit Custom Column - Equation (Sample).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Dialog - Run Report.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Activity - Details (Failure).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Columns - Hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Columns - Invalid Edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Details - Filter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Details - PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DD 2 - Details.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 2 - Details.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 3 - Filters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 4 - Columns (Hover).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Inbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/update/Screen - Reporting - Hover.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nc-des/analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/analysis.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nc-des/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nc-des/wireframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/wireframes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/jquery-3.5.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/scripts-home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/scripts-project.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +32,16 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1fpdZRRmfmjhvNFT6yviTckklC0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -86,10 +53,19 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CODE\digitalkate\nc-des\js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
