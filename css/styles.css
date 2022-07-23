@@ -9,6 +9,10 @@ h1, h2, h3, h4 {
   color: #2C4870;
 }
 
+.kudos h2, .kudos h3 {
+  margin: 20px;
+}
+
 a {
   color: #246D5E;
   text-decoration: none;
@@ -53,6 +57,10 @@ button:hover,
 li,
 p {
   margin-top: 10px;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 .note {
@@ -203,6 +211,21 @@ p {
     margin-bottom: 20px;
   }
 }
+.quoteBlock {
+  color: #5C85BD;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 40px;
+  padding: 20px 0;
+  border-top: 1px solid #C2C9D5;
+  border-bottom: 1px solid #C2C9D5;
+}
+.quoteBlock .attribution {
+  font-size: 0.6em;
+  text-align: right;
+  font-style: italic;
+}
+
 .card-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -305,6 +328,14 @@ p {
 @media only screen and (max-width: 600px) {
   .gallery-list img {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .buttonRow {
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
 }
 

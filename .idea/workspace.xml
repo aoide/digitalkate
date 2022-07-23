@@ -2,17 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61ef65d0-906d-4ff2-8951-23251ac31048" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/flowcharts/flow-chart_-_new_check_in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/flowcharts/flow-chart_-_old_check_in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/old/Multi-Document Check In (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/old/Multi-Document Check In.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/update/Dialog - Check In - Assign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/update/Dialog - Check In.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp-check-in/update/Dialog - Results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kudos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/flowcharts/flow-chart_-_new_reporting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/flowcharts/flow-chart_-_old_reporting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/mockups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Dashboard 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/old/Screen - Inbox - Documents.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Dialog - Edit Custom Column - Equation (Sample).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Dialog - Run Report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Activity - Details (Failure).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Columns - Hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Columns - Invalid Edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Details - Filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report - Details - PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DD 2 - Details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 2 - Details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 3 - Filters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Create Report Wizard - DF 4 - Columns (Hover).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Inbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-reports/update/Screen - Reporting - Hover.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc-des/analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/analysis.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nc-des/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc-des/wireframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/wireframes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smeir/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/smeir/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +71,7 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -57,6 +85,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CODE\digitalkate" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\CODE\digitalkate\nc-des\js" />
     </key>

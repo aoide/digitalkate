@@ -25,6 +25,12 @@ h1, h2, h3, h4 {
     color: $color-heading;
 }
 
+.kudos {
+    h2, h3 {
+        margin: $spacing-base;
+    }
+}
+
 a {
     color: $color-button;
     text-decoration: none;
@@ -64,6 +70,10 @@ button,
 li,
 p {
     margin-top: $spacing-half;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .note {
@@ -194,6 +204,22 @@ p {
     }
 }
 
+.quoteBlock {
+    color: $color-blue-light;
+    text-align: center;
+    font-size: 1.2em;
+    margin: $spacing-base $spacing-twice;
+    padding: $spacing-base 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+
+    .attribution {
+        font-size: .6em;
+        text-align: right;
+        font-style: italic;
+    }
+}
+
 // ==========================================================================
 // Cards
 // ==========================================================================
@@ -293,3 +319,12 @@ p {
         }
     }
 }
+
+@media only screen and (min-width: $screen-width-small) {
+    .buttonRow {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
