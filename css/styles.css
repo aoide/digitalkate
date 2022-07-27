@@ -12,6 +12,9 @@ h1, h2, h3, h4 {
 .kudos h2, .kudos h3 {
   margin: 20px;
 }
+.kudos h3 {
+  text-align: center;
+}
 
 a {
   color: #246D5E;
@@ -140,17 +143,13 @@ p {
 }
 
 .main-content {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 20px;
-}
-@media only screen and (max-width: 1200px) {
-  .main-content {
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 }
 
 .gallery,
@@ -206,7 +205,7 @@ p {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .about {
     margin-bottom: 20px;
   }
@@ -214,30 +213,43 @@ p {
 .quoteBlock {
   color: #5C85BD;
   text-align: center;
-  font-size: 1.2em;
-  margin: 20px 40px;
+  font-size: 1.1em;
+  margin: 40px auto;
   padding: 20px 0;
   border-top: 1px solid #C2C9D5;
   border-bottom: 1px solid #C2C9D5;
+  max-width: 800px;
+}
+@media only screen and (max-width: 900px) {
+  .quoteBlock {
+    margin: 40px 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quoteBlock {
+    font-size: 0.9em;
+  }
 }
 .quoteBlock .attribution {
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-align: right;
   font-style: italic;
 }
+@media only screen and (max-width: 600px) {
+  .quoteBlock .attribution {
+    font-size: 0.8em;
+  }
+}
 
 .card-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 900px) {
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 }
 .card-list .card {
   display: -webkit-box;
@@ -247,7 +259,7 @@ p {
   display: flex;
   box-shadow: 0 0 3px 0 #000;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
   .card-list .card {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
@@ -260,20 +272,18 @@ p {
 .card-list .card:not(:last-of-type) {
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 900px) {
-  .card-list .card .image {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
   .card-list .card .image {
     width: 100%;
   }
 }
 .card-list .card .image img {
+  object-fit: cover;
+  object-position: left top;
   width: 400px;
+  height: 200px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
   .card-list .card .image img {
     width: 100%;
   }

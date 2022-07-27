@@ -29,6 +29,9 @@ h1, h2, h3, h4 {
     h2, h3 {
         margin: $spacing-base;
     }
+    h3 {
+        text-align: center;
+    }
 }
 
 a {
@@ -139,11 +142,8 @@ p {
 }
 
 .main-content {
+    @include flex-direction(column);
     margin: $spacing-base;
-
-    @media only screen and (max-width: $screen-width-large) {
-        @include flex-direction(column);
-    }
 }
 
 .gallery,
@@ -207,16 +207,29 @@ p {
 .quoteBlock {
     color: $color-blue-light;
     text-align: center;
-    font-size: 1.2em;
-    margin: $spacing-base $spacing-twice;
+    font-size: 1.1em;
+    margin: $spacing-twice auto;
     padding: $spacing-base 0;
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
+    max-width: 800px;
+
+    @media only screen and (max-width: $screen-width-medium) {
+        margin: $spacing-twice $spacing-base;
+    }
+
+    @media only screen and (max-width: $screen-width-small) {
+        font-size: .9em;
+    }
 
     .attribution {
-        font-size: .6em;
+        font-size: .7em;
         text-align: right;
         font-style: italic;
+
+        @media only screen and (max-width: $screen-width-small) {
+            font-size: .8em;
+        }
     }
 }
 
@@ -225,14 +238,19 @@ p {
 // ==========================================================================
 
 .card-list {
-    @include flexbox;
-    @include flex-direction(column);
+    margin-top: $spacing-base;
+
+    @media only screen and (min-width: $screen-width-medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: $spacing-base;
+    }
 
     .card {
         @include flexbox;
         box-shadow: 0 0 3px 0 $color-black;
 
-        @media only screen and (max-width: $screen-width-small) {
+        @media only screen and (max-width: $screen-width-large) {
             @include flex-direction(column);
         }
 
@@ -241,17 +259,17 @@ p {
         }
 
         .image {
-            @media only screen and (max-width: $screen-width-medium) {
-                width: 50%;
-            }
-            @media only screen and (max-width: $screen-width-small) {
+            @media only screen and (max-width: $screen-width-large) {
                 width: 100%;
             }
 
             img {
+                object-fit: cover;
+                object-position: left top;
                 width: 400px;
+                height: 200px;
 
-                @media only screen and (max-width: $screen-width-medium) {
+                @media only screen and (max-width: $screen-width-large) {
                     width: 100%;
                 }
             }
