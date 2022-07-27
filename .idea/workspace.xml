@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61ef65d0-906d-4ff2-8951-23251ac31048" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp-check-in/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/atp-check-in/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kudos.html" beforeDir="false" afterPath="$PROJECT_DIR$/kudos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/manager-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-reports/mockups.html" beforeDir="false" afterPath="$PROJECT_DIR$/manager-reports/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nc-des/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nc-des/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smeir/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/smeir/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="35a320b0-6412-4652-ab41-712005cc116c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
