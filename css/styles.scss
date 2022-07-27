@@ -54,8 +54,6 @@ a {
 
 button,
 .button {
-    @include flexbox;
-    @include justify-content(center);
     background: $color-button;
     color: $color-button-text;
     border-radius: $border-radius;
@@ -63,6 +61,7 @@ button,
     margin-top: auto;
     border: 0;
     font-weight: normal;
+    text-align: center;
 
     &:hover {
         background: $color-button-hover;
@@ -96,11 +95,7 @@ p {
     padding-bottom: $spacing-base;
     border-bottom: 2px solid $color-border;
 
-    img {
-        width: 30px;
-    }
-
-    @media only screen and (max-width: $screen-width-small) {
+    @media only screen and (max-width: $screen-width-menu) {
         @include flex-direction(column);
 
         .heading-text {
@@ -113,15 +108,43 @@ p {
     @include flexbox;
     @include align-items(center);
 
-    a:not(:last-of-type) {
-        margin-right: $spacing-base;
+    a {
+        &:not(:last-of-type) {
+            margin-right: $spacing-base;
+        }
+
+        &.icon {
+            img {
+                width: 30px;
+            }
+
+            &:hover,
+            &.active {
+                border-bottom-color: transparent;
+            }
+        }
     }
 
-    @media only screen and (max-width: $screen-width-small) {
+    @media only screen and (max-width: $screen-width-menu) {
+        @include flex-wrap(wrap);
+        @include justify-content(center);
         margin-top: $spacing-base;
+
+        a {
+            font-size: 1.2em;
+            margin: $spacing-half;
+
+            &.icon {
+                position: absolute;
+                top: $spacing-twice;
+                right: $spacing-base;
+                img {
+                    width: 40px;
+                }
+            }
+        }
     }
 }
-
 
 // ==========================================================================
 // Navigation
@@ -130,7 +153,6 @@ p {
 .navigation-row {
     padding: $spacing-base;
 }
-
 
 // ==========================================================================
 // Content
@@ -169,31 +191,35 @@ p {
 .content {
     @include flex-direction(column);
 
-    .imageBlock {
-        margin-top: $spacing-base;
-
-        img {
-            max-width: 32%;
-            max-height: 400px;
-            margin-bottom: $spacing-base;
-            box-shadow: 0 0 3px 0 $color-black;
-
-            &:not(:last-of-type) {
-                margin-right: $spacing-half;
-            }
-
-            @media only screen and (max-width: $screen-width-medium) {
-                max-width: 48%;
-            }
-
-            @media only screen and (max-width: $screen-width-small) {
-                max-width: 100%;
-            }
-        }
-    }
-
     .buttonRow {
         margin-top: $spacing-base;
+    }
+}
+
+.imageBlock {
+    margin-top: $spacing-base;
+
+    img {
+        max-width: 32%;
+        max-height: 400px;
+        margin-bottom: $spacing-base;
+        box-shadow: 0 0 3px 0 $color-black;
+
+        &.flowchart {
+            margin-top: $spacing-base;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: $spacing-half;
+        }
+
+        @media only screen and (max-width: $screen-width-medium) {
+            max-width: 48%;
+        }
+
+        @media only screen and (max-width: $screen-width-small) {
+            max-width: 100%;
+        }
     }
 }
 
@@ -245,39 +271,43 @@ p {
         grid-template-columns: 1fr 1fr;
         column-gap: $spacing-base;
     }
+}
 
-    .card {
-        @include flexbox;
-        box-shadow: 0 0 3px 0 $color-black;
+.card {
+    @include flexbox;
+    box-shadow: 0 0 3px 0 $color-black;
 
+    @media only screen and (max-width: $screen-width-large) {
+        @include flex-direction(column);
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: $spacing-base;
+    }
+
+    .image {
         @media only screen and (max-width: $screen-width-large) {
-            @include flex-direction(column);
+            width: 100%;
         }
 
-        &:not(:last-of-type) {
-            margin-bottom: $spacing-base;
-        }
+        img {
+            object-fit: cover;
+            object-position: left top;
+            width: 400px;
+            height: 200px;
 
-        .image {
             @media only screen and (max-width: $screen-width-large) {
                 width: 100%;
             }
-
-            img {
-                object-fit: cover;
-                object-position: left top;
-                width: 400px;
-                height: 200px;
-
-                @media only screen and (max-width: $screen-width-large) {
-                    width: 100%;
-                }
-            }
         }
+    }
 
-        .content {
-            padding: $spacing-half;
-            width: 100%;
+    .content {
+        padding: $spacing-half;
+        width: 100%;
+
+        .button {
+            margin-top: $spacing-twice;
         }
     }
 }

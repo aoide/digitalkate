@@ -33,16 +33,6 @@ a.active {
 
 button,
 .button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
   background: #246D5E;
   color: #FFF;
   border-radius: 7px;
@@ -50,6 +40,7 @@ button,
   margin-top: auto;
   border: 0;
   font-weight: normal;
+  text-align: center;
 }
 button:hover,
 .button:hover {
@@ -91,10 +82,7 @@ p {
   padding-bottom: 20px;
   border-bottom: 2px solid #C2C9D5;
 }
-.heading img {
-  width: 30px;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .heading {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
@@ -123,9 +111,36 @@ p {
 .heading-menu a:not(:last-of-type) {
   margin-right: 20px;
 }
-@media only screen and (max-width: 600px) {
+.heading-menu a.icon img {
+  width: 30px;
+}
+.heading-menu a.icon:hover, .heading-menu a.icon.active {
+  border-bottom-color: transparent;
+}
+@media only screen and (max-width: 750px) {
   .heading-menu {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
     margin-top: 20px;
+  }
+  .heading-menu a {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+  .heading-menu a.icon {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+  .heading-menu a.icon img {
+    width: 40px;
   }
 }
 
@@ -179,30 +194,34 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.content .imageBlock {
+.content .buttonRow {
   margin-top: 20px;
 }
-.content .imageBlock img {
+
+.imageBlock {
+  margin-top: 20px;
+}
+.imageBlock img {
   max-width: 32%;
   max-height: 400px;
   margin-bottom: 20px;
   box-shadow: 0 0 3px 0 #000;
 }
-.content .imageBlock img:not(:last-of-type) {
+.imageBlock img.flowchart {
+  margin-top: 20px;
+}
+.imageBlock img:not(:last-of-type) {
   margin-right: 10px;
 }
 @media only screen and (max-width: 900px) {
-  .content .imageBlock img {
+  .imageBlock img {
     max-width: 48%;
   }
 }
 @media only screen and (max-width: 600px) {
-  .content .imageBlock img {
+  .imageBlock img {
     max-width: 100%;
   }
-}
-.content .buttonRow {
-  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -251,7 +270,8 @@ p {
     column-gap: 20px;
   }
 }
-.card-list .card {
+
+.card {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -260,7 +280,7 @@ p {
   box-shadow: 0 0 3px 0 #000;
 }
 @media only screen and (max-width: 1300px) {
-  .card-list .card {
+  .card {
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
     -webkit-flex-direction: column;
@@ -269,28 +289,31 @@ p {
     flex-direction: column;
   }
 }
-.card-list .card:not(:last-of-type) {
+.card:not(:last-of-type) {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1300px) {
-  .card-list .card .image {
+  .card .image {
     width: 100%;
   }
 }
-.card-list .card .image img {
+.card .image img {
   object-fit: cover;
   object-position: left top;
   width: 400px;
   height: 200px;
 }
 @media only screen and (max-width: 1300px) {
-  .card-list .card .image img {
+  .card .image img {
     width: 100%;
   }
 }
-.card-list .card .content {
+.card .content {
   padding: 10px;
   width: 100%;
+}
+.card .content .button {
+  margin-top: 40px;
 }
 
 .tag-list {
