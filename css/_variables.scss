@@ -4,7 +4,7 @@
 // Screens
 // ==========================================================================
 
-$screen-width-large: 1300px;
+$screen-width-large: 1600px;
 $screen-width-medium: 900px;
 $screen-width-small: 600px;
 $screen-width-menu: 750px;
@@ -37,7 +37,8 @@ $border-radius: 7px;
 $color-white: #FFF;
 $color-black: #000;
 $color-grey: #5E6F88;
-$color-grey-light: #C2C9D5;
+$color-grey-light: #8b9098;
+$color-grey-lightest: #fbfbfb;
 
 // blues (main)
 $color-blue: #2C4870;
@@ -54,6 +55,7 @@ $color-red: #AD1710;
 $color-text: $color-grey;
 $color-heading: $color-blue;
 $color-border: $color-grey-light;
+$color-background: $color-grey-lightest;
 
 $color-button: $color-green;
 $color-button-hover: $color-green-light;
