@@ -264,18 +264,35 @@ p {
 // ==========================================================================
 
 .card-list {
-    margin-top: $spacing-base;
+    margin-top: $spacing-twice;
+    padding-top: $spacing-twice;
+    position: relative;
 
     @media only screen and (min-width: $screen-width-medium) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: $spacing-base;
     }
+
+    &::before {
+        content: " ";
+        height: 2px;
+        background: $color-border;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        opacity: .3;
+    }
 }
 
 .card {
     @include flexbox;
-    box-shadow: 0 0 3px 0 $color-black;
+    border-radius: $border-radius;
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    border: 1px solid rgba(0, 0, 0, .1);
 
     @media only screen and (max-width: $screen-width-large) {
         @include flex-direction(column);
@@ -285,29 +302,34 @@ p {
         margin-bottom: $spacing-base;
     }
 
-    .image {
-        @media only screen and (max-width: $screen-width-large) {
-            width: 100%;
-        }
-
-        img {
-            object-fit: cover;
-            object-position: left top;
-            width: 400px;
-            height: 200px;
-
-            @media only screen and (max-width: $screen-width-large) {
-                width: 100%;
-            }
-        }
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: left top;
+        z-index: 1;
     }
 
     .content {
+        @include flexbox;
+        @include align-items(flex-start);
+        z-index: 2;
         padding: $spacing-half;
         width: 100%;
+        background: $color-background;
 
         .button {
-            margin-top: $spacing-twice;
+            @include align-self(center);
+            margin: $spacing-base 0;
+        }
+    }
+
+    &.des {
+        img {
+            left: -1px;
+            width: 101%;
         }
     }
 }
