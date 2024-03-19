@@ -4,60 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigitalKate</title>
+    <title>Manager | DigitalKate</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/digitalkate.png">
-    <script src="../scripts/jquery-3.5.1.min.js"></script>
-    <script src="../scripts/jquery.waypoints.min.js"></script>
-    <script src="../scripts/scripts-project.js"></script>
 </head>
-<body class="fixed column project mgr">
+<body>
 
-<div id="heading"
-     class="heading">
-    <h1>Kate Rosier</h1>
-    <span>|</span>
-    <a href="../index.html">
-        <h1>Home</h1>
-    </a>
-
-    <a class="icon"
-       href="https://www.linkedin.com/in/katerosier/"
-       target="_blank">
-        <img alt="linkedIn icon" src="../images/linkedIn.png">
-        <span>LinkedIn</span>
-    </a>
-</div>
-
-<div class="navigationRow">
-
-    <h2>Reporting for Boeing S1000Dmanager</h2>
-
-    <div id="subNavigation"
-         class="subNavigation">
-        <div id="navItem_1"
-             class="navItem">
-            <h3>Overview</h3>
-        </div>
-        <div id="navItem_2"
-             class="navItem">
-            <h3>Analysis</h3>
-        </div>
-        <div id="navItem_3"
-             class="navItem">
-            <h3>User Flow Diagram</h3>
-        </div>
-        <div id="navItem_4"
-             class="navItem">
-            <h3>Mockups</h3>
-        </div>
+<div class="heading">
+    <div class="heading-text">
+        <h1>Kate Rosier</h1>
+        <p>Full Stack Designer</p>
     </div>
 
+    <div class="heading-menu">
+        <a href="../index.html">Home</a>
+        <a href="../nc-des/index.html">NC DES</a>
+        <a href="../react-ui/index.html">React UI</a>
+        <a href="../smeir/index.html">SMEIR</a>
+        <a href="../atp-check-in/index.html">ATP</a>
+        <a href="../manager-reports/index.html" class="active">Manager</a>
+        <a href="../kudos.html">Kudos</a>
+        <a class="icon"
+           href="https://www.linkedin.com/in/katerosier/"
+           target="_blank">
+            <img alt="linkedIn icon" src="../images/linkedIn.png">
+        </a>
+    </div>
 </div>
 
-<div id="contentBlock_1"
-     class="contentBlock">
+<div class="navigation-row">
+    <h2>Reporting for Boeing S1000Dmanager</h2>
+</div>
+
+<div class="contentBlock">
     <h3>Overview</h3>
     <div class="content">
         <div class="textBlock">
@@ -66,16 +46,10 @@
             <p>Previously, this had been a fixed set of reports. When requesting new reports, managers had to come to the S1000D product team to get new reports or use a technical scripting software to retrieve the data out of the database.</p>
             <p>With this update, reports were updated so that these managers could have a more flexible set of reports. Instead of fixed reports with fixed data queries, they could make reports on their own through the UI, which allowed them to select any fields in the database they needed as well as run excel like functions against that data (e.g. “Column B” is the result of if “Column A” is greater than 5 and if so, reads out “TRUE”).</p>
         </div>
-        <div class="imageBlock">
-            <img src="old/Screen - Inbox - Documents.png"
-                 alt="Inbox screen with menu open"
-                 title="Inbox screen with menu open">
-        </div>
     </div>
 </div>
 
-<div id="contentBlock_2"
-     class="contentBlock">
+<div class="contentBlock">
     <h3>Analysis</h3>
     <div class="content">
         <div class="textBlock">
@@ -101,8 +75,7 @@
     </div>
 </div>
 
-<div id="contentBlock_3"
-     class="contentBlock">
+<div class="contentBlock">
     <h3>User Flow Diagram</h3>
     <div class="content">
         <div class="textBlock">
@@ -129,18 +102,12 @@
     </div>
 </div>
 
-<div id="contentBlock_4"
-     class="contentBlock">
+<div class="contentBlock">
     <h3>Mockups</h3>
     <div class="content">
         <div class="textBlock">
             <p>Following the user flow diagram, I set up the screens and added elements from the design library that suited the data type I needed to display.</p>
             <p>After feedback, the initial set up screen I had was kept for editing a report, but I moved to a ‘walk through’ wizard for the report creation to help step them through all the pieces they’d be required to verify and set. This would prevent an invalid report from being saved.</p>
-            <p class="buttonRow">
-                <a class="button"
-                   href="mockups.html"
-                   target="_blank">View full mockup image set</a>
-            </p>
         </div>
         <div class="imageBlock">
             <img src="update/Screen - Create Report Wizard - 1.png"
@@ -153,6 +120,11 @@
                  alt="Reporting screen with row item hovered"
                  title="Reporting screen with row item hovered">
         </div>
+        <p class="buttonRow">
+            <a class="button"
+               href="update.html"
+               target="_blank">View Mockups</a>
+        </p>
     </div>
 </div>
 

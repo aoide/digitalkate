@@ -6,7 +6,6 @@
 
 @import 'flex';
 @import 'variables';
-@import 'mixins';
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -17,101 +16,385 @@
 // ==========================================================================
 
 body {
-    height: 100%;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
+    background: $color-background;
+    color: $color-text;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: $color-purple;
+h1, h2, h3, h4 {
+    color: $color-heading;
 }
 
-p {
-    line-height: 26px;
-}
-
-a,
-a h1,
-a h2,
-a h3 {
-    color: $color-green;
+.kudos {
+    h2, h3 {
+        margin: $spacing-base;
+    }
+    h3 {
+        text-align: center;
+    }
 }
 
 a {
-    font-weight: bold;
+    color: $color-button;
     text-decoration: none;
-}
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease-in-out;
+    font-weight: bold;
 
-a:hover {
-    text-decoration: underline;
-}
-
-li {
-    margin-bottom: $spacing-half;
-}
-
-.hide {
-    display: none !important;
-}
-
-.note {
-    color: $color-grey-dark;
-    font-style: italic;
-}
-
-// ==========================================================================
-// Structure
-// ==========================================================================
-
-.column,
-.row {
-    @include flexbox;
-}
-
-.column {
-    @include flex-direction(column);
-}
-
-.row {
-    @include flex-basis(100%);
-    @include flex-direction(row);
-}
-
-// responsive adjustments
-
-@media only screen and (max-width: $screen-width-medium) {
-
-    .row {
-        @include flex-direction(column);
+    &:hover,
+    &.active {
+        color: $color-button-hover;
+        border-bottom-color: $color-button-hover;
     }
 
+    &.active {
+        pointer-events: none;
+    }
 }
 
-// ==========================================================================
-// Fake Button
-// ==========================================================================
-
-a.button {
-    min-width: 300px;
+button,
+.button {
+    background: $color-button;
+    color: $color-button-text;
+    border-radius: $border-radius;
     padding: $spacing-half $spacing-base;
-    background: $color-green;
-    color: $color-white;
+    margin-top: auto;
+    border: 0;
+    font-weight: normal;
     text-align: center;
 
     &:hover {
-        text-decoration: none;
-        background: $color-blue;
+        background: $color-button-hover;
+        color: $color-button-text;
+    }
+}
+
+li,
+p {
+    margin-top: $spacing-half;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.note {
+    font-style: italic;
+    font-size: .8em;
+}
+
+// ==========================================================================
+// Heading
+// ==========================================================================
+
+.heading {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    margin: $spacing-base;
+    padding-bottom: $spacing-base;
+    border-bottom: 2px solid $color-border;
+
+    @media only screen and (max-width: $screen-width-menu) {
+        @include flex-direction(column);
+
+        .heading-text {
+            text-align: center;
+        }
+    }
+}
+
+.heading-menu {
+    @include flexbox;
+    @include align-items(center);
+
+    a {
+        &:not(:last-of-type) {
+            margin-right: $spacing-base;
+        }
+
+        &.icon {
+            img {
+                width: 30px;
+            }
+
+            &:hover,
+            &.active {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $screen-width-menu) {
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+        margin-top: $spacing-base;
+
+        a {
+            font-size: 1.2em;
+            margin: $spacing-half;
+
+            &.icon {
+                position: absolute;
+                top: $spacing-twice;
+                right: $spacing-base;
+                img {
+                    width: 40px;
+                }
+            }
+        }
     }
 }
 
 // ==========================================================================
-// Sub Import
+// Navigation
 // ==========================================================================
 
-@import 'header';
-@import 'home';
-@import 'project';
-@import 'gallery';
+.navigation-row {
+    padding: $spacing-base;
+}
+
+// ==========================================================================
+// Content
+// ==========================================================================
+
+.main-content,
+.content {
+    @include flexbox;
+}
+
+.main-content {
+    @include flex-direction(column);
+    margin: $spacing-base;
+}
+
+.gallery,
+.contentBlock {
+    padding: $spacing-base;
+}
+
+.contentBlock {
+    position: relative;
+
+    &:before {
+        content: " ";
+        height: 2px;
+        background: $color-border;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        opacity: .3;
+    }
+}
+
+.content {
+    @include flex-direction(column);
+
+    .buttonRow {
+        margin-top: $spacing-base;
+    }
+}
+
+.imageBlock {
+    margin-top: $spacing-base;
+
+    img {
+        max-width: 32%;
+        max-height: 400px;
+        margin-bottom: $spacing-base;
+        box-shadow: 0 0 3px 0 $color-black;
+
+        &.flowchart {
+            margin-top: $spacing-base;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: $spacing-half;
+        }
+
+        @media only screen and (max-width: $screen-width-medium) {
+            max-width: 48%;
+        }
+
+        @media only screen and (max-width: $screen-width-small) {
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: $screen-width-large) {
+    .about {
+        margin-bottom: $spacing-base;
+    }
+}
+
+.quoteBlock {
+    color: $color-blue-light;
+    text-align: center;
+    font-size: 1.1em;
+    margin: $spacing-twice auto;
+    padding: $spacing-base 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    max-width: 800px;
+
+    @media only screen and (max-width: $screen-width-medium) {
+        margin: $spacing-twice $spacing-base;
+    }
+
+    @media only screen and (max-width: $screen-width-small) {
+        font-size: .9em;
+    }
+
+    .attribution {
+        font-size: .7em;
+        text-align: right;
+        font-style: italic;
+
+        @media only screen and (max-width: $screen-width-small) {
+            font-size: .8em;
+        }
+    }
+}
+
+// ==========================================================================
+// Cards
+// ==========================================================================
+
+.card-list {
+    margin-top: $spacing-twice;
+    padding-top: $spacing-twice;
+    position: relative;
+
+    @media only screen and (min-width: $screen-width-medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: $spacing-base;
+    }
+
+    &::before {
+        content: " ";
+        height: 2px;
+        background: $color-border;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        opacity: .3;
+    }
+}
+
+.card {
+    @include flexbox;
+    border-radius: $border-radius;
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+    @media only screen and (max-width: $screen-width-large) {
+        @include flex-direction(column);
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: $spacing-base;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: left top;
+        z-index: 1;
+    }
+
+    .content {
+        @include flexbox;
+        @include align-items(flex-start);
+        z-index: 2;
+        padding: $spacing-half;
+        width: 100%;
+        background: $color-background;
+
+        .button {
+            @include align-self(center);
+            margin: $spacing-base 0;
+        }
+    }
+
+    &.des {
+        img {
+            left: -1px;
+            width: 101%;
+        }
+    }
+}
+
+// ==========================================================================
+// Tags
+// ==========================================================================
+
+.tag-list {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    margin-top: $spacing-base;
+
+    .tag {
+        background: $color-heading;
+        color: $color-white;
+        padding: 3px $spacing-half;
+        border-radius: $border-radius;
+        font-size: .8em;
+        white-space: nowrap;
+        margin-bottom: $spacing-half;
+
+        &:not(:last-of-type) {
+            margin-right: $spacing-half;
+        }
+
+        &.issue {
+            background: $color-flag;
+        }
+    }
+}
+
+// ==========================================================================
+// Galleries
+// ==========================================================================
+
+.gallery {
+    h2 {
+        margin-bottom: $spacing-base;
+    }
+
+    .lightboxed--caption {
+        font-size: 1.5em;
+    }
+}
+
+.gallery-list {
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: $spacing-half;
+        border: 1px solid $color-grey-light;
+
+        @media only screen and (max-width: $screen-width-small) {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-width-small) {
+    .buttonRow {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
