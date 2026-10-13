@@ -1,0 +1,4 @@
+[codespell]
+skip = ./site
+count =
+quiet-level = 3

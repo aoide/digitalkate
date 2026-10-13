@@ -1,0 +1,82 @@
+site_name: Kate Rosier
+site_description: Digital UX design portfolio for Kate Rosier
+site_url: https://digitalkate.com
+site_author: Kate Rosier
+copyright: Copyright &copy; 2026 Kate Rosier
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: false
+
+validation:
+  links:
+    absolute_links: ignore
+
+theme:
+  name: material
+  custom_dir: docs/_overrides
+  favicon: _assets/images/digitalkate.png
+  palette:
+      primary: custom
+      accent: custom
+  features:
+      - navigation.expand
+      - navigation.instant
+      - navigation.instant.progress
+      - navigation.path
+      - navigation.sections
+      - navigation.tabs
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/katerosier/
+      name: LinkedIn
+    - icon: fontawesome/brands/github 
+      link: https://github.com/aoide?tab=repositories
+      name: GitHub
+
+extra_css:
+  - _assets/stylesheets/custom.css
+  - _assets/stylesheets/glightbox.min.css
+
+plugins:
+    - glightbox:
+        touchNavigation: true
+        loop: false
+        effect: zoom
+        slide_effect: slide
+        width: 100%
+        height: auto
+        zoomable: true
+        draggable: true
+        skip_classes:
+          - custom-skip-class-name
+        auto_caption: true
+        caption_position: bottom
+        background: white
+        shadow: true
+        manual: false
+  
+markdown_extensions:
+    - admonition
+    - attr_list
+    - md_in_html
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.details
+    - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Projects:
+    - React UI:
+      - Overview: react-ui/index.md
+    - NC DES:
+      - Overview: nc-des/index.md
+      - Analysis Images: nc-des/analysis.md
+      - Wireframes: nc-des/wireframes.md
+  - Kudos: kudos.md
+  - About: about.md
