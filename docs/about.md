@@ -9,8 +9,6 @@ glightbox: false
 
 ## Kate. Defined.
 
-![Kate](./_assets/images/digitalkate.png)  
-
 Hi! I'm Kate.
 
 I work as full stack designer with a focus on enterprise applications, particularly for the Department of Defense.
