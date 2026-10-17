@@ -8,7 +8,11 @@ hide:
 
 *Certifiably Certified*
 
-## Certified Scrum Product Owner® (CSPO®)
+## Main Course
+
+*Main certifications for on the job work*
+
+### Certified Scrum Product Owner® (CSPO®)
 
 ![Certified Scrum Product Owner](./_assets/images-certs/cspo.png){ .cert-image }
 
@@ -18,7 +22,7 @@ hide:
 - **Certificate ID**: 1796901
 - **Link**: [Badge Cert](https://app.badgecert.com/public/badges/ortjbvzm)
 
-## CompTia Security+ {.cert-clear}
+### CompTia Security+ {.cert-clear}
 
 ![CompTia Security+](./_assets/images-certs/securityplus.png){ .cert-image }
 
@@ -28,7 +32,11 @@ hide:
 - **Certificate ID**: fee14bce-6bc0-4c3d-b4e1-2ea5e50d1b42
 - **Link**: [Credly](https://www.credly.com/earner/earned/badge/fee14bce-6bc0-4c3d-b4e1-2ea5e50d1b42)
 
-## Product Designer {.cert-clear}
+## Dessert {.cert-clear}
+
+*Extra shiny gold stars and general continuing education*
+
+### Product Designer
 
 ![Uxcel Product Designer](./_assets/images-certs/uxcel.png){ .cert-image }
 
@@ -38,7 +46,7 @@ hide:
 - **Certificate ID**: OWTHUQ6JB3GI
 - **Link**: [Uxcel](https://app.uxcel.com/certificates/OWTHUQ6JB3GI)
 
-## UX Designer {.cert-clear}
+### UX Designer {.cert-clear}
 
 ![Uxcel UX Designer](./_assets/images-certs/uxcel.png){ .cert-image }
 

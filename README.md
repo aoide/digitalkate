@@ -23,7 +23,6 @@ In the terminal:
 - **MkDocs**
     - `mkdocs build`
     - `mkdocs serve`
-    - Generated theme and plugin assets are placed in `site/_assets`.
 
 ## Related Resources
 
@@ -32,5 +31,4 @@ In the terminal:
 - MKDocs Plugins
     - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) (theme)
     - [glightbox](https://github.com/blueswen/mkdocs-glightbox)
-    - [publisher](https://mkdocs-publisher.github.io/)
 - [Vale](https://vale.sh/) (writing checks)
