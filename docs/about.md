@@ -2,11 +2,14 @@
 hide:
   - navigation
   - toc
+glightbox: false
 ---
 
 # Designer. Coder. Geek.
 
 ## Kate. Defined.
+
+![Kate](./_assets/images/digitalkate.png)  
 
 Hi! I'm Kate.
 
@@ -26,6 +29,9 @@ I talk to users, write requirements, drive user flows, talk to users more, craft
 
 I also implement front end interfaces using React, Angular, JQuery, HTML, and CSS/SCSS.
 
-## As for the rest…
+## As for the rest...
 
-I'm owned by 2 cats, and I read... a lot. I love gaming and farmer's markets… and drinking chai. Lots of chai.
+I'm owned by 2 cats, and I read... a lot. I love gaming, farmer's markets, and drinking chai. Lots of chai.
+
+![Quinn & Yumi](./_assets/images/cats.jpg)  
+*Quinn & Yumi*

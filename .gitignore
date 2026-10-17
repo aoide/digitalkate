@@ -12,3 +12,6 @@
 
 ### Markdown ###
 site/
+
+### Python ###
+/scripts/__pycache__/
