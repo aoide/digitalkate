@@ -10,7 +10,7 @@ hide:
 
 ## Certified Scrum Product Owner® (CSPO®)
 
-![Certified Scrum Product Owner](./_assets/images-certs/cspo.png)
+![Certified Scrum Product Owner](./_assets/images-certs/cspo.png){ .cert-image }
 
 - **Issuer**: Scrum Alliance, Inc.
 - **Issue Date**: 06/12/2023
@@ -18,9 +18,9 @@ hide:
 - **Certificate ID**: 1796901
 - **Link**: [Badge Cert](https://app.badgecert.com/public/badges/ortjbvzm)
 
-## CompTia Security+
+## CompTia Security+ {.cert-clear}
 
-![CompTia Security+](./_assets/images-certs/securityplus.png)
+![CompTia Security+](./_assets/images-certs/securityplus.png){ .cert-image }
 
 - **Issuer**: CompTia
 - **Issue Date**: 06/2026
@@ -28,9 +28,9 @@ hide:
 - **Certificate ID**: fee14bce-6bc0-4c3d-b4e1-2ea5e50d1b42
 - **Link**: [Credly](https://www.credly.com/earner/earned/badge/fee14bce-6bc0-4c3d-b4e1-2ea5e50d1b42)
 
-## Product Designer
+## Product Designer {.cert-clear}
 
-![Uxcel Product Designer](./_assets/images-certs/uxcel.png)
+![Uxcel Product Designer](./_assets/images-certs/uxcel.png){ .cert-image }
 
 - **Issuer**: Uxcel
 - **Issue Date**: 01/2026
@@ -38,9 +38,9 @@ hide:
 - **Certificate ID**: OWTHUQ6JB3GI
 - **Link**: [Uxcel](https://app.uxcel.com/certificates/OWTHUQ6JB3GI)
 
-## UX Designer
+## UX Designer {.cert-clear}
 
-![Uxcel UX Designer](./_assets/images-certs/uxcel.png)
+![Uxcel UX Designer](./_assets/images-certs/uxcel.png){ .cert-image }
 
 - **Issuer**: Uxcel
 - **Issue Date**: 01/2026
